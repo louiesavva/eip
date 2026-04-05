@@ -1,14 +1,14 @@
 :root {
-  --bg: #111111;
-  --bg-soft: #171717;
-  --panel: #1b1b1b;
-  --text: #e9e4d8;
-  --muted: #b7b0a2;
-  --border: rgba(255, 255, 255, 0.1);
-  --border-strong: rgba(255, 255, 255, 0.16);
-  --link: #f2d28b;
-  --link-hover: #ffe4a8;
-  --quote: #d8cfbf;
+  --bg: #ffffff;
+  --bg-soft: #f7f7f7;
+  --panel: #f7f7f7;
+  --text: #111111;
+  --muted: #555555;
+  --border: rgba(0, 0, 0, 0.12);
+  --border-strong: rgba(0, 0, 0, 0.22);
+  --link: #111111;
+  --link-hover: #000000;
+  --quote: #333333;
   --max-width: 860px;
 }
 
@@ -134,8 +134,6 @@ a:focus {
   font-style: italic;
 }
 
-/* Start Here */
-
 .start-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -167,8 +165,6 @@ a:focus {
   margin-bottom: 0.85rem;
 }
 
-/* Books */
-
 .book-item {
   margin-top: 2rem;
   padding: 1.25rem 0 0;
@@ -179,14 +175,10 @@ a:focus {
   margin-top: 0;
 }
 
-/* Resources */
-
 #resources h3[id],
 #resources h3 {
   margin-top: 1.7rem;
 }
-
-/* Essay page */
 
 .essay-page {
   max-width: 760px;
@@ -196,19 +188,13 @@ a:focus {
   margin-bottom: 0;
 }
 
-/* Utility */
-
 #top {
   scroll-margin-top: 1rem;
 }
 
-/* Optional subtle section rhythm */
-
 section + section {
   scroll-margin-top: 1rem;
 }
-
-/* Mobile */
 
 @media (max-width: 700px) {
   body {
@@ -243,15 +229,11 @@ section + section {
   }
 }
 
-/* Slightly larger screens */
-
 @media (min-width: 1100px) {
   .wrap {
     max-width: 900px;
   }
 }
-
-/* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
   html {
