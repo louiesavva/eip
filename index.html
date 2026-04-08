@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Everything Is Pointless</title>
+  <meta name="description" content="Books, essays, and existential resources by Dr Louie Savva. A secular, existential approach to life, death, meaning, absurdity, and the difficult business of being human." />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Everything Is Pointless" />
+  <meta property="og:title" content="Everything Is Pointless" />
+  <meta property="og:description" content="Books, essays, and existential resources by Dr Louie Savva." />
+  <meta property="og:url" content="https://everythingispointless.com/" />
+  <meta property="og:image" content="https://everythingispointless.com/assets/og-image.jpg" />
+  <meta property="og:image:alt" content="Everything Is Pointless by Dr Louie Savva" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Everything Is Pointless" />
+  <meta name="twitter:description" content="Books, essays, and existential resources by Dr Louie Savva." />
+  <meta name="twitter:image" content="https://everythingispointless.com/assets/og-image.jpg" />
+
+  <style>
+    :root {
+      --bg: #f7f4ec;
+      --paper: #fffdf8;
+      --ink: #161616;
+      --muted: #5e5a52;
+      --line: #d6d0c4;
+      --line-strong: #a89f90;
+      --accent: #202020;
+      --accent-soft: #efebe1;
+      --shadow: 0 10px 30px rgba(0,0,0,0.05);
+      --radius: 16px;
+      --maxw: 1080px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom, #fbf8f1 0%, #f4f0e6 100%);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--ink);
+      text-underline-offset: 0.18em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:hover { opacity: 0.8; }
+
+    .wrap {
+      width: min(calc(100% - 2rem), var(--maxw));
+      margin: 0 auto;
+      padding: 1rem 0 4rem;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      margin: 0 0 1rem;
+      backdrop-filter: blur(12px);
+      background: rgba(247, 244, 236, 0.82);
+      border-bottom: 1px solid rgba(166, 155, 136, 0.25);
+    }
+
+    .site-header-inner {
+      width: min(calc(100% - 2rem), var(--maxw));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.9rem 0;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 0.05rem;
+      min-width: 0;
+    }
+
+    .brand a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .site-title {
+      margin: 0;
+      font-size: clamp(1.3rem, 2vw, 1.7rem);
+      line-height: 1.1;
+      letter-spacing: 0.01em;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem 1rem;
+      justify-content: flex-end;
+      font-size: 0.96rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--ink);
+      white-space: nowrap;
+    }
+
+    nav a:hover,
+    nav a:focus { text-decoration: underline; }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.35fr 0.95fr;
+      gap: 2rem;
+      padding: 2.2rem 0 2rem;
+      align-items: start;
+    }
+
+    .hero-copy {
+      background: rgba(255,255,255,0.55);
+      border: 1px solid rgba(166, 155, 136, 0.25);
+      border-radius: calc(var(--radius) + 4px);
+      box-shadow: var(--shadow);
+      padding: 2rem;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin: 0 0 0.85rem;
+      padding: 0.35rem 0.6rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-size: 0.8rem;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      background: rgba(255,255,255,0.6);
+      color: var(--muted);
+    }
+
+    .hero h1 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+    }
+
+    .hero .deck {
+      font-size: 1.15rem;
+      color: #292929;
+      margin: 0 0 1rem;
+      max-width: 36rem;
+    }
+
+    .hero p {
+      margin: 0 0 1rem;
+      color: #27241f;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1.25rem;
+    }
+
+    .button,
+    .button-ghost {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.8rem 1rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      min-width: 11rem;
+      transition: transform 0.15s ease, opacity 0.15s ease, background 0.15s ease;
+    }
+
+    .button {
+      background: var(--accent);
+      color: #fff;
+      border: 1px solid var(--accent);
+    }
+
+    .button:hover,
+    .button-ghost:hover { transform: translateY(-1px); }
+
+    .button-ghost {
+      border: 1px solid var(--line-strong);
+      background: rgba(255,255,255,0.6);
+      color: var(--ink);
+    }
+
+    .hero-side {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .info-card {
+      background: rgba(255,255,255,0.62);
+      border: 1px solid rgba(166, 155, 136, 0.3);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.25rem 1.2rem;
+    }
+
+    .info-card h2,
+    .info-card h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.05rem;
+    }
+
+    .info-card p,
+    .info-card li {
+      margin: 0.45rem 0 0;
+      color: #2d2a24;
+      font-size: 0.98rem;
+    }
+
+    .info-card ul {
+      margin: 0.45rem 0 0;
+      padding-left: 1.1rem;
+    }
+
+    .quote {
+      font-style: italic;
+      color: var(--muted);
+    }
+
+    section {
+      margin-top: 2rem;
+      padding: 1.4rem 0 0;
+    }
+
+    section h2 {
+      margin: 0 0 0.45rem;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .section-intro {
+      margin: 0 0 1.35rem;
+      max-width: 48rem;
+      color: #302d27;
+    }
+
+    .books-grid,
+    .writing-grid,
+    .resource-grid,
+    .mini-grid {
+      display: grid;
+      gap: 1.25rem;
+    }
+
+    .books-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .book-card,
+    .writing-card,
+    .resource-card,
+    .contact-card,
+    .author-card,
+    .summary-card {
+      background: var(--paper);
+      border: 1px solid rgba(166, 155, 136, 0.35);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .book-card {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    .book-cover {
+      position: relative;
+      aspect-ratio: 3 / 4.35;
+      background: linear-gradient(180deg, #ece6d7 0%, #ddd2bc 100%);
+      border-bottom: 1px solid rgba(166, 155, 136, 0.3);
+      overflow: hidden;
+    }
+
+    .book-cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .book-cover-fallback {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1.15rem;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(255,255,255,0.85), transparent 35%),
+        linear-gradient(180deg, #f5efe0 0%, #e0d5bf 100%);
+      color: #151515;
+    }
+
+    .book-cover-fallback small {
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.73rem;
+      color: #514b3f;
+    }
+
+    .book-cover-fallback strong {
+      display: block;
+      font-size: clamp(1.3rem, 2.5vw, 1.95rem);
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+      max-width: 10ch;
+    }
+
+    .book-cover-fallback em {
+      display: block;
+      font-size: 0.84rem;
+      font-style: normal;
+      color: #5e5647;
+      max-width: 17ch;
+    }
+
+    .book-copy {
+      padding: 1.15rem 1.1rem 1.2rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .book-copy h3,
+    .writing-card h3,
+    .resource-card h3,
+    .author-card h3,
+    .contact-card h3,
+    .summary-card h3 {
+      margin: 0 0 0.35rem;
+      font-size: 1.15rem;
+      line-height: 1.2;
+    }
+
+    .small,
+    .meta {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .book-copy p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .book-links,
+    .inline-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem 0.95rem;
+      margin-top: auto;
+      padding-top: 0.5rem;
+    }
+
+    .book-links a,
+    .inline-links a {
+      font-size: 0.95rem;
+    }
+
+    .writing-grid,
+    .resource-grid,
+    .mini-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .writing-card,
+    .resource-card,
+    .summary-card,
+    .author-card,
+    .contact-card {
+      padding: 1.2rem;
+    }
+
+    .writing-card p,
+    .resource-card p,
+    .summary-card p,
+    .author-card p,
+    .contact-card p {
+      margin: 0.55rem 0 0;
+    }
+
+    .essay-stack {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    details.essay {
+      background: var(--paper);
+      border: 1px solid rgba(166, 155, 136, 0.35);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    details.essay[open] {
+      background: #fffdf9;
+    }
+
+    details.essay summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 1rem 1.2rem;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    details.essay summary::-webkit-details-marker { display: none; }
+
+    details.essay summary span {
+      font-weight: 400;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .essay-body {
+      padding: 0 1.2rem 1.2rem;
+      border-top: 1px solid rgba(166, 155, 136, 0.28);
+    }
+
+    .essay-body p {
+      margin: 1rem 0 0;
+      max-width: 72ch;
+    }
+
+    .resource-card ul {
+      margin: 0.7rem 0 0;
+      padding-left: 1.1rem;
+    }
+
+    .resource-card li {
+      margin: 0.35rem 0;
+    }
+
+    .split-end {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 1.25rem;
+      margin-top: 1rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer p {
+      margin: 0.35rem 0;
+    }
+
+    .back-top {
+      display: inline-block;
+      margin-top: 0.85rem;
+    }
+
+    @media (max-width: 980px) {
+      .hero,
+      .split-end,
+      .books-grid,
+      .writing-grid,
+      .resource-grid,
+      .mini-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .site-header {
+        position: static;
+      }
+
+      .site-header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      nav {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .wrap {
+        width: min(calc(100% - 1rem), var(--maxw));
+      }
+
+      .hero-copy,
+      .info-card,
+      .writing-card,
+      .resource-card,
+      .author-card,
+      .contact-card,
+      .summary-card,
+      .book-copy,
+      .essay-body,
+      details.essay summary {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      .hero h1 {
+        font-size: clamp(2rem, 11vw, 3rem);
+      }
+
+      .button,
+      .button-ghost {
+        width: 100%;
+        min-width: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="site-header-inner">
+      <div class="brand">
+        <a href="#top" aria-label="Back to top">
+          <h1 class="site-title">Everything Is Pointless</h1>
+        </a>
+        <p class="subtitle">A former blog. An ongoing worldview.</p>
+      </div>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#books">Books</a>
+        <a href="#writing">Writing</a>
+        <a href="#resources">Resources</a>
+        <a href="#author">Author</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <main>
+      <section class="hero" id="about">
+        <div class="hero-copy">
+          <p class="eyebrow">Books, essays, and existential resources</p>
+          <h1>Everything Is Pointless</h1>
+          <p class="deck">A secular, existential approach to life, death, meaning, absurdity, and the difficult business of being human.</p>
+          <p>
+            These are pages for people who have looked life in the face and found it odd, brutal, absurd, beautiful, empty, or all of the above before lunch.
+          </p>
+          <p>
+            I am a hospital chaplain working from a non-religious, existential perspective, with a PhD in Psychology. Much of what appears here comes from living alongside suffering, mortality, humour, and the difficult business of being human.
+          </p>
+          <p>
+            Once upon a time this was a blog about the pointlessness of existence. The blog is retired, but the questions remain. The site now serves as a front door to three books, a small body of writing, and a curated shelf of writers for people who want to think more seriously about freedom, suffering, mortality, absurdity, and the strange business of being here at all.
+          </p>
+          <p class="quote">
+            You do not need to agree with these writers. You only need to be willing to be bothered by them.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#books">Browse the books</a>
+            <a class="button-ghost" href="#writing">Read the writing</a>
+          </div>
+        </div>
+
+        <div class="hero-side">
+          <article class="info-card">
+            <h2>Start here</h2>
+            <p>
+              If you are new to the site, the shortest route in is <em>Everything Is Pointless</em>. If you want the wider, more conversational version, go to <em>The Existential Files</em>. If you want the broader quotation-based shelf of science, doubt, error, mortality, and wonder, go to <em>Against Certainty</em>.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>The worldview in one paragraph</h3>
+            <p>
+              We are not substances or souls, but neither are we nothing. We are temporary, contingent, embodied, relational happenings: finite beings who suffer, laugh, love, grieve, and die in a universe that offers no cosmic guarantee of meaning. That does not make life worthless. It means the burden and beauty of meaning fall here, in loyalty, care, honesty, wit, presence, and the strange fact that conscious creatures meet each other at all.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Who this is for</h3>
+            <p>
+              This site is for people interested in mortality, absurdity, suffering, freedom, humour, finitude, and the human animal. It is not a self-help shrine, and it is not a religious refuge. It is a place for people willing to look directly at the weirdness and carry on anyway.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="books">
+        <h2>Books</h2>
+        <p class="section-intro">
+          Three books live here: a short foundational introduction, a broader quotation-based volume, and a conversational guide to living in a meaningless universe. The cover image paths below assume that matching image files live in <code>/assets/</code>; if they do not, the page falls back to clean text-based cover panels automatically.
+        </p>
+
+        <div class="books-grid">
+          <article class="book-card">
+            <div class="book-cover">
+              <img src="/assets/everything-is-pointless-cover.jpg" alt="Cover of Everything Is Pointless" loading="lazy" />
+              <div class="book-cover-fallback" aria-hidden="true">
+                <small>Dr Louie Savva</small>
+                <strong>Everything Is Pointless</strong>
+                <em>The short foundational book</em>
+              </div>
+            </div>
+            <div class="book-copy">
+              <h3><em>Everything Is Pointless</em></h3>
+              <p class="meta">The short foundational book.</p>
+              <p>
+                This is the shorter piece and the best place to start if you want the basic outlook behind the site. It gathers the two most important texts from the original blog: reflections on meaning, pointlessness, suffering, continuity, and the strange fact that human beings keep going anyway.
+              </p>
+              <div class="book-links">
+                <a href="https://everythingispointless.com/assets/EverythingIsPointless_LouieSavva.pdf">PDF</a>
+                <a href="https://everythingispointless.com/assets/EverythingIsPointless_LouieSavva.epub">EPUB</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card">
+            <div class="book-cover">
+              <img src="/assets/against-certainty-cover.jpg" alt="Cover of Against Certainty" loading="lazy" />
+              <div class="book-cover-fallback" aria-hidden="true">
+                <small>Dr Louie Savva</small>
+                <strong>Against Certainty</strong>
+                <em>Chance, error, evidence, death, absurdity, wonder</em>
+              </div>
+            </div>
+            <div class="book-copy">
+              <h3><em>Against Certainty</em></h3>
+              <p class="meta">A quotation book on chance, science, error, evidence, death, absurdity, and wonder.</p>
+              <p>
+                A more substantial collection built around quotations from writers, scientists, philosophers, and skeptics, with short introductory essays that try to make a worldview out of proportion, fallibility, anti-vanity, and chastened wonder.
+              </p>
+              <div class="book-links">
+                <a href="https://everythingispointless.com/assets/Against_Certainty_LouieSavva.pdf">PDF</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card">
+            <div class="book-cover">
+              <img src="/assets/the-existential-files-cover.jpg" alt="Cover of The Existential Files" loading="lazy" />
+              <div class="book-cover-fallback" aria-hidden="true">
+                <small>Dr Louie Savva &amp; Dr Matthew Smith</small>
+                <strong>The Existential Files</strong>
+                <em>A guide to living in a meaningless universe</em>
+              </div>
+            </div>
+            <div class="book-copy">
+              <h3><em>The Existential Files</em></h3>
+              <p class="meta">A conversational guide to living in a meaningless universe.</p>
+              <p>
+                A sharper, more conversational route into the same broad outlook: mortality, absurdity, meaninglessness, humour, and the business of carrying on without false consolation. Drawn from the podcast work with Matthew Smith.
+              </p>
+              <div class="book-links">
+                <a href="https://everythingispointless.com/assets/the_existential_files.pdf">PDF</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="writing">
+        <h2>Writing</h2>
+        <p class="section-intro">
+          A small body of writing from the site: the core texts, a selected later essay, and the older reflections that still underpin the whole thing.
+        </p>
+
+        <div class="writing-grid">
+          <article class="writing-card">
+            <h3>Mortality</h3>
+            <p class="small">A non-religious reflection on mortality, suffering, attachment, and finitude.</p>
+            <p>
+              The harsher, rawer front edge of the site: death, absurdity, the failure of cosmic comfort, and the strange insistence that love still matters anyway.
+            </p>
+            <p><a href="#mortality-text">Read below</a></p>
+          </article>
+
+          <article class="writing-card">
+            <h3>Meaning</h3>
+            <p class="small">An earlier reflection on continuity, existence, and temporary meaning.</p>
+            <p>
+              A more tentative but still recognisable articulation of the worldview: continuity, being, finitude, and the claim that existence itself can bear a kind of local meaning.
+            </p>
+            <p><a href="#meaning-text">Read below</a></p>
+          </article>
+
+          <article class="writing-card">
+            <h3>When Syntax Becomes Skin</h3>
+            <p class="small">Consciousness, substrate, copies, and the absence of a permanent self.</p>
+            <p>
+              A later essay for readers who want something more conceptual: embodiment, consciousness, copying, and the uneasy relationship between information and selfhood.
+            </p>
+            <p><a href="/essays/when-syntax-becomes-skin.html">Read the essay</a></p>
+          </article>
+
+          <article class="summary-card">
+            <h3>Reading paths</h3>
+            <p>
+              New here? Start with <em>Everything Is Pointless</em>.
+              Want the more conversational book? Go to <em>The Existential Files</em>.
+              Want the longer quotation-based book? Go to <em>Against Certainty</em>.
+              Want the raw front edge? Read <em>Mortality</em>.
+            </p>
+          </article>
+        </div>
+
+        <div class="essay-stack">
+          <details class="essay" id="mortality-text">
+            <summary>Mortality <span>click to expand / collapse</span></summary>
+            <div class="essay-body">
+              <p>
+                Life is a piece of shit and then you die. There is a darkness around us. Meaninglessness. Incomprehensibility. Purposelessness. The earth is the only place where care exists between us. We huddle around a fire. Born out of the purposeless process of evolution. We didn’t ask to be born. But here we are. Extant in a universe that cares not one whit. Fine.
+              </p>
+              <p>
+                There is no up or down. No right or wrong. Let him who is without sin cast the first stone. Mortality then? How strange it is to be anything at all. The gnat laments his short lot. Apologies to all beings upon whom existence is inflicted. Kierkegaard’s words ring true: hang yourself, you’ll regret it. Don’t hang yourself, you will regret that too. Cessation of being is just another of life’s cruel circumstances.
+              </p>
+              <p>
+                I work in a hospital, and see that the joke often wears thin. Childhood may be fun, but I’m not sure I’d wish old age and infirmity on my worst enemy. We live, we die. Try not to take it too seriously, and perhaps then you will not be the butt of the joke. Love one another deeply, for what other choice is there? Loss can be unbearable, but I’m not sure covering yourself in goose fat and running through life without making deep attachments is the solution.
+              </p>
+              <p>
+                The absurdity. The weirdness. The terror. These are normal reactions to the infinite uncaring universe. Life is death by a thousand cuts. Death: the final insult. The end of the problem.
+              </p>
+            </div>
+          </details>
+
+          <details class="essay" id="meaning-text">
+            <summary>Meaning <span>click to expand / collapse</span></summary>
+            <div class="essay-body">
+              <p>
+                What does my life mean? Obviously this is a question I have dwelt upon. Everything is pointless. But some things are more pointless than others. (Is that distinction a deep or shallow gradient? Are all other mountains shorter than Everest, or is it a virtually featureless desert, where the only Everest is the smallest of pebbles?)
+              </p>
+              <p>
+                I imagine a web. Below is an infinity of meaninglessness. But tentatively supporting my weight is this tenuous gossamer thread. An ectoplasm of justness. I touch the smooth fossilised footprint of a long extinct dinosaur. My hand examines the space. A creature once stood here. It lived. It breathed. It died. And now there are no more. Not it. Not its mates. Not its offspring. But there is continuity there. From the first life-form to this footprint to me. Truth. Existence. Being. This footprint means something.
+              </p>
+              <p>
+                I leave footprints. The dinosaur had no understanding. Not even an inkling. But even when the earth is boiled away into nothingness, I existed. Painful. Strange. Absurd. A chimera of authentic and inauthentic. Social and individual. My address: Louie. The ape. This time. This space. Now.
+              </p>
+              <p>
+                Cinéma vérité then. Not meaning in the sense of a parable. I do not live by virtue of an overarching lesson. I am not a character in a play whose actions are pre-scripted. Minute by minute I inhabit my skull. I feel the freedom and the limitations. The folds of my cerebellum leave an imprint upon the bone. I am not a solipsist. I am an existentialist and nihilist. Temporary meaning subsumed in a wider nothingness of unmeaning. The thread breaks. I descend into the darkness. To join all kin of being. But I did exist. We did exist. Whatever else is true or false, that is a meaning. To me at least.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section id="resources">
+        <h2>Resources</h2>
+        <p class="section-intro">
+          A curated shelf for people interested in alienation, absurdity, suffering, freedom, finitude, and the human animal.
+        </p>
+
+        <div class="resource-grid">
+          <article class="resource-card">
+            <h3>Kafka</h3>
+            <p>
+              Kafka is for when life starts to feel accusatory. For when the ordinary turns sinister. For when family, work, the body, and the world all become faintly hostile.
+            </p>
+            <ul>
+              <li><a href="https://www.gutenberg.org/files/5200/5200-h/5200-h.htm">The Metamorphosis</a></li>
+              <li><a href="https://www.gutenberg.org/ebooks/7849">The Trial</a></li>
+            </ul>
+          </article>
+
+          <article class="resource-card">
+            <h3>Camus</h3>
+            <p>
+              Camus is for when you want clarity without false hope. He is one of the best guides to the absurd because he refuses both despair and consolation.
+            </p>
+            <ul>
+              <li><a href="https://archive.org/details/mythofsisyphusot00camu">The Myth of Sisyphus</a></li>
+            </ul>
+          </article>
+
+          <article class="resource-card">
+            <h3>Dostoevsky</h3>
+            <p>
+              Dostoevsky is for when existence becomes feverish. He writes about guilt, freedom, humiliation, God, rebellion, and the ridiculous extremes of being human.
+            </p>
+            <ul>
+              <li><a href="https://www.gutenberg.org/files/600/600-h/600-h.htm">Notes from Underground</a></li>
+              <li><a href="https://www.gutenberg.org/files/2554/2554-h/2554-h.htm">Crime and Punishment</a></li>
+              <li><a href="https://www.gutenberg.org/files/28054/28054-h/28054-h.htm">The Brothers Karamazov</a></li>
+            </ul>
+          </article>
+
+          <article class="resource-card">
+            <h3>Kierkegaard</h3>
+            <p>
+              Kierkegaard is for when anxiety, despair, inwardness, and the burden of becoming oneself become unavoidable.
+            </p>
+            <ul>
+              <li><a href="https://archive.org/details/selectionsfromwr00kieruoft">Selections from the Writings of Kierkegaard</a></li>
+              <li><a href="https://archive.org/details/in.ernet.dli.2015.189042">The Sickness Unto Death</a></li>
+              <li><a href="https://archive.org/details/in.ernet.dli.2015.504967">Either/Or</a></li>
+            </ul>
+          </article>
+
+          <article class="resource-card">
+            <h3>Sartre</h3>
+            <p>
+              Sartre is for when you need the unpleasant news. You are free. You are responsible. You cannot permanently hide behind your role, your temperament, or your preferred mythology about yourself.
+            </p>
+            <ul>
+              <li><a href="https://archive.org/details/existentialismhu0000sart_a4b1">Existentialism and Humanism</a></li>
+              <li><a href="https://archive.org/details/Jean-paulSartre-Nausea1938">Nausea</a></li>
+            </ul>
+          </article>
+
+          <article class="resource-card">
+            <h3>Nietzsche</h3>
+            <p>
+              Nietzsche is for when the old values have collapsed but you are not interested in crawling back to them. He is not soothing, but he is alive.
+            </p>
+            <ul>
+              <li><a href="https://www.gutenberg.org/files/1998/1998-h/1998-h.htm">Thus Spake Zarathustra</a></li>
+              <li><a href="https://www.gutenberg.org/ebooks/4363">Beyond Good and Evil</a></li>
+              <li><a href="https://www.gutenberg.org/files/52319/52319-h/52319-h.htm">On the Genealogy of Morals</a></li>
+            </ul>
+          </article>
+
+          <article class="resource-card">
+            <h3>Darwin</h3>
+            <p>
+              Darwin is here because existential questions are not only philosophical. They are also biological. Human beings like to imagine themselves as somehow above nature. Darwin is useful medicine for that.
+            </p>
+            <ul>
+              <li><a href="https://www.gutenberg.org/files/1228/1228-h/1228-h.htm">On the Origin of Species</a></li>
+              <li><a href="https://www.gutenberg.org/ebooks/34967">The Descent of Man</a></li>
+              <li><a href="https://www.gutenberg.org/files/1227/1227-h/1227-h.htm">The Expression of the Emotions in Man and Animals</a></li>
+            </ul>
+          </article>
+
+          <article class="resource-card">
+            <h3>Heidegger, if you must</h3>
+            <p>
+              Heidegger matters. He also sometimes reads like a man trying to force language to confess. Still, if you want anxiety, finitude, and thrownness, he belongs here.
+            </p>
+            <ul>
+              <li><a href="https://archive.org/details/heidegger-what-is-metaphysics-1928">What Is Metaphysics?</a></li>
+              <li><a href="https://archive.org/details/beingtime0000heid">Being and Time</a></li>
+            </ul>
+          </article>
+
+          <article class="resource-card">
+            <h3>Short texts and poems</h3>
+            <p>
+              For when you want something brief but fatalistic enough to do the job.
+            </p>
+            <ul>
+              <li><a href="https://www.gutenberg.org/cache/epub/4798/pg4798-images.html">Percy Bysshe Shelley — Complete Poetical Works, Vol. 2</a> (includes <em>Ozymandias</em>) — Empires come. Empires go. Sand remains smug.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="split-end">
+          <article class="author-card" id="author">
+            <h2>Author</h2>
+            <p>
+              My name is Dr Louie Savva. I am a hospital chaplain working from a non-religious, existential perspective. I also have a PhD in Psychology.
+            </p>
+            <p>
+              Much of my work sits at the intersection of suffering, mortality, humour, meaning, and the difficult business of being human.
+            </p>
+            <div class="inline-links">
+              <a href="https://x.com/LouieSavva">Twitter / X</a>
+              <a href="https://github.com/louiesavva">GitHub</a>
+            </div>
+          </article>
+
+          <article class="contact-card" id="contact">
+            <h2>Contact</h2>
+            <p>
+              If you want to get in touch, ask a question, or say hello, you can email me here.
+            </p>
+            <p>
+              <a href="mailto:louie.savva@gmail.com">louie.savva@gmail.com</a>
+            </p>
+            <p class="small">
+              Most of the site is deliberately simple. The writing and books are the point.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p><strong>Everything Is Pointless</strong> — books, essays, and existential resources by Dr Louie Savva.</p>
+      <p>Most older public-domain texts here point to Project Gutenberg. Some later works remain on Archive.org or other lawful sources, and availability can change.</p>
+      <a class="back-top" href="#top">Back to top</a>
+    </footer>
+  </div>
+
+  <script>
+    document.querySelectorAll('.book-cover').forEach(function (cover) {
+      const img = cover.querySelector('img');
+      const fallback = cover.querySelector('.book-cover-fallback');
+      if (!img || !fallback) return;
+
+      const showFallback = function () {
+        fallback.style.display = 'flex';
+      };
+
+      const hideFallback = function () {
+        fallback.style.display = 'none';
+      };
+
+      img.addEventListener('load', hideFallback);
+      img.addEventListener('error', showFallback);
+
+      if (img.complete && img.naturalWidth > 0) {
+        hideFallback();
+      } else {
+        showFallback();
+      }
+    });
+  </script>
+</body>
+</html>
