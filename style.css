@@ -1,13 +1,10 @@
-
 :root {
   --bg: #f7f4ec;
-  --paper: #fbf8f1;
   --ink: #161616;
   --muted: #5e5a52;
   --line: #d6d0c4;
-  --line-strong: #a89f90;
-  --accent: #202020;
-  --maxw: 980px;
+  --line-strong: #b8b1a5;
+  --maxw: 940px;
 }
 
 * {
@@ -26,78 +23,53 @@ body {
   line-height: 1.65;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   color: var(--ink);
-  text-underline-offset: 0.18em;
   text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
 }
 
 a:hover {
-  opacity: 0.86;
+  opacity: 0.85;
 }
 
 .wrap {
   width: min(calc(100% - 2rem), var(--maxw));
   margin: 0 auto;
-  padding: 0.75rem 0 3rem;
+  padding: 1.25rem 0 3.5rem;
 }
 
 .site-header {
-  position: static;
-  margin: 0;
+  padding: 0 0 1rem;
   border-bottom: 1px solid var(--line);
-  background: transparent;
-}
-
-.site-header-inner {
-  width: min(calc(100% - 2rem), var(--maxw));
-  margin: 0 auto;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 1rem 2rem;
-  padding: 1.15rem 0 0.95rem;
-}
-
-.brand {
-  display: flex;
-  flex-direction: column;
-  gap: 0.18rem;
-  min-width: 0;
-  padding-right: 0.4rem;
-}
-
-.brand a {
-  text-decoration: none;
-  color: inherit;
 }
 
 .site-title {
   margin: 0;
-  font-size: clamp(1.75rem, 3vw, 2.3rem);
+  font-size: clamp(2.2rem, 5vw, 3.15rem);
   line-height: 1.02;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 
 .subtitle {
-  margin: 0.1rem 0 0;
+  margin: 0.35rem 0 0;
   color: var(--muted);
-  font-size: 0.96rem;
+  font-size: 1.1rem;
 }
 
 nav {
+  margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.7rem 1rem;
-  justify-content: flex-end;
-  font-size: 0.96rem;
-  padding-bottom: 0.12rem;
+  gap: 0.55rem 1.15rem;
 }
 
 nav a {
   text-decoration: none;
-  color: var(--ink);
-  white-space: nowrap;
 }
 
 nav a:hover,
@@ -105,114 +77,24 @@ nav a:focus {
   text-decoration: underline;
 }
 
-.hero {
-  display: grid;
-  grid-template-columns: 1.2fr 0.9fr;
-  gap: 1.35rem;
-  padding: 1.7rem 0 1.2rem;
-  align-items: start;
+section {
+  padding-top: 1.6rem;
 }
 
-.hero-copy,
-.info-card,
-.book-card,
-.writing-card,
-.resource-card,
-.contact-card,
-.author-card,
-.summary-card,
-details.essay {
-  background: transparent;
-  border: 1px solid var(--line);
-  border-radius: 0;
-  box-shadow: none;
+section h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.7rem;
+  line-height: 1.1;
 }
 
-.hero-copy {
-  padding: 1.35rem 1.4rem 1.3rem;
+section h3 {
+  margin: 1.2rem 0 0.35rem;
+  font-size: 1.15rem;
+  line-height: 1.2;
 }
 
-.eyebrow {
-  display: inline-block;
-  margin: 0 0 0.75rem;
-  color: var(--muted);
-  font-size: 0.8rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-.hero h1,
-.hero-title {
-  margin: 0 0 0.7rem;
-  font-size: clamp(1.9rem, 4vw, 2.8rem);
-  line-height: 1.06;
-  letter-spacing: -0.02em;
-}
-
-.hero .deck {
-  font-size: 1.08rem;
-  color: #292929;
+p {
   margin: 0 0 1rem;
-  max-width: 34rem;
-}
-
-.hero p {
-  margin: 0 0 1rem;
-  color: #27241f;
-}
-
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1rem;
-}
-
-.button,
-.button-ghost {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.6rem 0.85rem;
-  border: 1px solid var(--line-strong);
-  border-radius: 0;
-  text-decoration: none;
-  font-size: 0.95rem;
-  min-width: 10.5rem;
-  background: transparent;
-  color: var(--ink);
-}
-
-.button:hover,
-.button-ghost:hover {
-  background: #f1ede3;
-}
-
-.hero-side {
-  display: grid;
-  gap: 0.9rem;
-}
-
-.info-card {
-  padding: 1rem 1.05rem;
-}
-
-.info-card h2,
-.info-card h3 {
-  margin: 0 0 0.45rem;
-  font-size: 1.03rem;
-}
-
-.info-card p,
-.info-card li {
-  margin: 0.45rem 0 0;
-  color: #2d2a24;
-  font-size: 0.98rem;
-}
-
-.info-card ul {
-  margin: 0.45rem 0 0;
-  padding-left: 1.1rem;
 }
 
 .quote {
@@ -220,293 +102,161 @@ details.essay {
   color: var(--muted);
 }
 
-section {
-  margin-top: 1.7rem;
-  padding-top: 0.1rem;
-}
-
-section h2 {
-  margin: 0 0 0.45rem;
-  font-size: clamp(1.55rem, 3vw, 2rem);
-  line-height: 1.12;
-  letter-spacing: -0.01em;
-}
-
 .section-intro {
-  margin: 0 0 1.1rem;
-  max-width: 48rem;
-  color: #302d27;
+  color: #2c2a26;
+  max-width: 46rem;
 }
 
-.books-grid,
-.writing-grid,
-.resource-grid {
+.book-row {
   display: grid;
+  grid-template-columns: 120px 1fr;
   gap: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
 }
 
-.books-grid {
-  grid-template-columns: 1fr;
+.book-row:last-of-type {
+  border-bottom: 1px solid var(--line);
 }
 
-.book-card {
-  display: grid;
-  grid-template-columns: 132px 1fr;
-  gap: 1rem;
-  align-items: start;
-  overflow: hidden;
-  padding: 1rem;
+.book-thumb {
+  position: relative;
+  width: 120px;
 }
 
-.book-cover {
-  width: 132px;
-  min-width: 132px;
-  border: 0;
-  background: transparent;
-  aspect-ratio: auto;
-}
-
-.book-cover img {
+.book-thumb img {
   display: block;
   width: 100%;
   height: auto;
-  object-fit: contain;
-  image-rendering: auto;
+  border: 1px solid var(--line);
 }
 
-.book-cover-fallback {
-  position: static;
-  display: flex;
-  min-height: 192px;
-  padding: 0.95rem 0.95rem 0.9rem;
+.book-thumb-fallback {
+  display: none;
+  min-height: 170px;
   border: 1px solid var(--line);
+  padding: 0.8rem;
   background: #ece6d7;
   flex-direction: column;
   justify-content: space-between;
-  color: #151515;
 }
 
-.book-cover-fallback small {
-  display: block;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+.book-thumb-fallback small {
   font-size: 0.68rem;
-  color: #514b3f;
-  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #534d42;
 }
 
-.book-cover-fallback strong {
+.book-thumb-fallback strong {
   display: block;
-  margin: 0.55rem 0 0.8rem;
-  font-size: 1.28rem;
-  line-height: 1.08;
-  letter-spacing: -0.02em;
-  padding-right: 0.3rem;
+  font-size: 1.15rem;
+  line-height: 1.05;
+  padding-right: 0.25rem;
 }
 
-.book-cover-fallback em {
-  display: block;
-  font-size: 0.8rem;
-  font-style: normal;
-  color: #5e5647;
-  line-height: 1.35;
-  padding-right: 0.2rem;
+.book-text h3 {
+  margin-top: 0;
 }
 
-.book-copy {
-  padding: 0.05rem 0 0;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-}
-
-.book-copy h3,
-.writing-card h3,
-.resource-card h3,
-.author-card h3,
-.contact-card h3,
-.summary-card h3 {
-  margin: 0 0 0.35rem;
-  font-size: 1.12rem;
-  line-height: 1.2;
-}
-
-.small,
-.meta {
+.meta,
+.small-note {
   color: var(--muted);
-  font-size: 0.92rem;
-}
-
-.book-links,
-.inline-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem 0.95rem;
-  margin-top: auto;
-  padding-top: 0.45rem;
-}
-
-.book-links a,
-.inline-links a {
   font-size: 0.95rem;
 }
 
-.writing-grid,
-.resource-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.links {
+  margin-bottom: 0;
 }
 
-.writing-card,
-.resource-card,
-.summary-card,
-.author-card,
-.contact-card {
-  padding: 1rem 1.05rem;
-}
-
-.writing-card p,
-.resource-card p,
-.summary-card p,
-.author-card p,
-.contact-card p {
-  margin: 0.5rem 0 0;
-}
-
-.essay-stack {
-  display: grid;
-  gap: 0.9rem;
-  margin-top: 1rem;
-}
-
-details.essay {
-  overflow: hidden;
-}
-
-details.essay[open] {
-  background: transparent;
-}
-
-details.essay summary {
-  cursor: pointer;
-  list-style: none;
-  padding: 0.95rem 1.05rem;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1rem;
-  font-size: 1.02rem;
-  font-weight: 700;
-}
-
-details.essay summary::-webkit-details-marker {
-  display: none;
-}
-
-details.essay summary span {
-  font-weight: 400;
+.sep {
   color: var(--muted);
-  font-size: 0.9rem;
+  margin: 0 0.35rem;
 }
 
-.essay-body {
-  padding: 0 1.05rem 1rem;
-  border-top: 1px solid var(--line);
-}
-
-.essay-body p {
-  margin: 0.95rem 0 0;
-  max-width: 72ch;
-}
-
-.resource-card ul {
-  margin: 0.65rem 0 0;
+.writing-list {
+  margin: 0 0 1rem;
   padding-left: 1.1rem;
 }
 
-.resource-card li {
-  margin: 0.35rem 0;
+.writing-list li {
+  margin: 0.6rem 0;
 }
 
-.split-end {
+.essay {
+  border-top: 1px solid var(--line);
+  padding-top: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.essay:last-of-type {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.8rem;
+}
+
+.essay summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.essay-body {
+  padding-top: 0.4rem;
+}
+
+.essay-body p {
+  max-width: 72ch;
+}
+
+.resource-columns {
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 1rem;
-  margin-top: 0.4rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.resource-columns h3:first-child {
+  margin-top: 0;
+}
+
+.resource-columns ul {
+  margin: 0.45rem 0 1rem;
+  padding-left: 1.1rem;
+}
+
+.resource-columns li {
+  margin: 0.3rem 0;
+}
+
+.end-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
 footer {
-  margin-top: 2.3rem;
-  padding-top: 1.25rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-size: 0.95rem;
 }
 
 footer p {
   margin: 0.35rem 0;
 }
 
-.back-top {
-  display: inline-block;
-  margin-top: 0.75rem;
-}
-
-@media (max-width: 980px) {
-  .hero,
-  .split-end,
-  .writing-grid,
-  .resource-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .site-header-inner {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  nav {
-    justify-content: flex-start;
-  }
-}
-
-@media (max-width: 720px) {
-  .book-card {
-    grid-template-columns: 1fr;
-  }
-
-  .book-cover {
-    width: 128px;
-    min-width: 0;
-  }
-}
-
-@media (max-width: 680px) {
-  .wrap,
-  .site-header-inner {
+@media (max-width: 760px) {
+  .wrap {
     width: min(calc(100% - 1rem), var(--maxw));
   }
 
-  .hero-copy,
-  .info-card,
-  .writing-card,
-  .resource-card,
-  .author-card,
-  .contact-card,
-  .summary-card,
-  details.essay summary,
-  .essay-body {
-    padding-left: 0.95rem;
-    padding-right: 0.95rem;
+  .book-row,
+  .resource-columns,
+  .end-grid {
+    grid-template-columns: 1fr;
   }
 
-  .hero h1,
-  .hero-title {
-    font-size: clamp(1.8rem, 10vw, 2.4rem);
-  }
-
-  .button,
-  .button-ghost {
-    width: 100%;
-    min-width: 0;
+  .book-thumb {
+    width: 110px;
   }
 }
