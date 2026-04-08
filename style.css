@@ -1,3 +1,4 @@
+
 :root {
   --bg: #f7f4ec;
   --paper: #fbf8f1;
@@ -27,42 +28,43 @@ body {
 
 a {
   color: var(--ink);
-  text-underline-offset: 0.16em;
+  text-underline-offset: 0.18em;
   text-decoration-thickness: 0.08em;
 }
 
 a:hover {
-  opacity: 0.84;
+  opacity: 0.86;
 }
 
 .wrap {
   width: min(calc(100% - 2rem), var(--maxw));
   margin: 0 auto;
-  padding: 1.25rem 0 3.5rem;
+  padding: 0.75rem 0 3rem;
 }
 
 .site-header {
   position: static;
   margin: 0;
-  background: transparent;
   border-bottom: 1px solid var(--line);
+  background: transparent;
 }
 
 .site-header-inner {
   width: min(calc(100% - 2rem), var(--maxw));
   margin: 0 auto;
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: space-between;
-  gap: 1.25rem;
-  padding: 1rem 0 0.9rem;
+  gap: 1rem 2rem;
+  padding: 1.15rem 0 0.95rem;
 }
 
 .brand {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  gap: 0.18rem;
   min-width: 0;
+  padding-right: 0.4rem;
 }
 
 .brand a {
@@ -72,16 +74,15 @@ a:hover {
 
 .site-title {
   margin: 0;
-  padding: 0.1rem 0 0;
-  font-size: clamp(1.35rem, 2vw, 1.75rem);
-  line-height: 1.1;
-  letter-spacing: 0;
+  font-size: clamp(1.75rem, 3vw, 2.3rem);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
 }
 
 .subtitle {
-  margin: 0;
+  margin: 0.1rem 0 0;
   color: var(--muted);
-  font-size: 0.94rem;
+  font-size: 0.96rem;
 }
 
 nav {
@@ -90,7 +91,7 @@ nav {
   gap: 0.7rem 1rem;
   justify-content: flex-end;
   font-size: 0.96rem;
-  padding-top: 0.15rem;
+  padding-bottom: 0.12rem;
 }
 
 nav a {
@@ -106,9 +107,9 @@ nav a:focus {
 
 .hero {
   display: grid;
-  grid-template-columns: 1.35fr 0.95fr;
-  gap: 1.4rem;
-  padding: 1.6rem 0 1.4rem;
+  grid-template-columns: 1.2fr 0.9fr;
+  gap: 1.35rem;
+  padding: 1.7rem 0 1.2rem;
   align-items: start;
 }
 
@@ -128,26 +129,23 @@ details.essay {
 }
 
 .hero-copy {
-  padding: 1.35rem;
+  padding: 1.35rem 1.4rem 1.3rem;
 }
 
 .eyebrow {
   display: inline-block;
-  margin: 0 0 0.85rem;
-  padding: 0.2rem 0.5rem;
-  border: 1px solid var(--line);
-  font-size: 0.78rem;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  margin: 0 0 0.75rem;
   color: var(--muted);
-  background: transparent;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
-.hero h1 {
-  margin: 0 0 0.8rem;
-  padding-right: 0.2rem;
-  font-size: clamp(2.2rem, 6vw, 3.8rem);
-  line-height: 1.02;
+.hero h1,
+.hero-title {
+  margin: 0 0 0.7rem;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  line-height: 1.06;
   letter-spacing: -0.02em;
 }
 
@@ -155,7 +153,7 @@ details.essay {
   font-size: 1.08rem;
   color: #292929;
   margin: 0 0 1rem;
-  max-width: 36rem;
+  max-width: 34rem;
 }
 
 .hero p {
@@ -166,8 +164,8 @@ details.essay {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.7rem;
-  margin-top: 1.15rem;
+  gap: 0.75rem;
+  margin-top: 1rem;
 }
 
 .button,
@@ -175,20 +173,19 @@ details.essay {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.72rem 0.95rem;
+  padding: 0.6rem 0.85rem;
   border: 1px solid var(--line-strong);
   border-radius: 0;
   text-decoration: none;
   font-size: 0.95rem;
-  min-width: 10rem;
+  min-width: 10.5rem;
   background: transparent;
   color: var(--ink);
 }
 
 .button:hover,
 .button-ghost:hover {
-  background: #f1ece2;
-  opacity: 1;
+  background: #f1ede3;
 }
 
 .hero-side {
@@ -197,13 +194,13 @@ details.essay {
 }
 
 .info-card {
-  padding: 1rem;
+  padding: 1rem 1.05rem;
 }
 
 .info-card h2,
 .info-card h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.02rem;
+  margin: 0 0 0.45rem;
+  font-size: 1.03rem;
 }
 
 .info-card p,
@@ -224,15 +221,15 @@ details.essay {
 }
 
 section {
-  margin-top: 1.8rem;
-  padding: 1.1rem 0 0;
+  margin-top: 1.7rem;
+  padding-top: 0.1rem;
 }
 
 section h2 {
   margin: 0 0 0.45rem;
   font-size: clamp(1.55rem, 3vw, 2rem);
-  line-height: 1.1;
-  letter-spacing: 0;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
 }
 
 .section-intro {
@@ -254,71 +251,73 @@ section h2 {
 
 .book-card {
   display: grid;
-  grid-template-columns: 130px 1fr;
+  grid-template-columns: 132px 1fr;
+  gap: 1rem;
   align-items: start;
   overflow: hidden;
+  padding: 1rem;
 }
 
 .book-cover {
-  position: relative;
-  width: 130px;
-  min-height: 100%;
-  aspect-ratio: 3 / 4.35;
-  background: #e7decd;
-  border-right: 1px solid var(--line);
-  overflow: hidden;
+  width: 132px;
+  min-width: 132px;
+  border: 0;
+  background: transparent;
+  aspect-ratio: auto;
 }
 
 .book-cover img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  image-rendering: auto;
 }
 
 .book-cover-fallback {
-  position: absolute;
-  inset: 0;
+  position: static;
   display: flex;
+  min-height: 192px;
+  padding: 0.95rem 0.95rem 0.9rem;
+  border: 1px solid var(--line);
+  background: #ece6d7;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem 0.85rem 0.9rem;
-  background: linear-gradient(180deg, #f3eddc 0%, #ded1b7 100%);
   color: #151515;
 }
 
 .book-cover-fallback small {
   display: block;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  font-size: 0.64rem;
+  letter-spacing: 0.08em;
+  font-size: 0.68rem;
   color: #514b3f;
-  line-height: 1.35;
+  line-height: 1.3;
 }
 
 .book-cover-fallback strong {
   display: block;
-  margin: 0.45rem 0 0.35rem;
-  font-size: 1.15rem;
-  line-height: 1.05;
+  margin: 0.55rem 0 0.8rem;
+  font-size: 1.28rem;
+  line-height: 1.08;
   letter-spacing: -0.02em;
-  max-width: 9ch;
-  padding-right: 0.2rem;
+  padding-right: 0.3rem;
 }
 
 .book-cover-fallback em {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-style: normal;
   color: #5e5647;
-  max-width: 14ch;
   line-height: 1.35;
+  padding-right: 0.2rem;
 }
 
 .book-copy {
-  padding: 1rem 1rem 1rem 1.05rem;
+  padding: 0.05rem 0 0;
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .book-copy h3,
@@ -338,15 +337,11 @@ section h2 {
   font-size: 0.92rem;
 }
 
-.book-copy p:last-of-type {
-  margin-bottom: 0;
-}
-
 .book-links,
 .inline-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.55rem 0.9rem;
+  gap: 0.55rem 0.95rem;
   margin-top: auto;
   padding-top: 0.45rem;
 }
@@ -366,7 +361,7 @@ section h2 {
 .summary-card,
 .author-card,
 .contact-card {
-  padding: 1rem;
+  padding: 1rem 1.05rem;
 }
 
 .writing-card p,
@@ -374,7 +369,7 @@ section h2 {
 .summary-card p,
 .author-card p,
 .contact-card p {
-  margin: 0.55rem 0 0;
+  margin: 0.5rem 0 0;
 }
 
 .essay-stack {
@@ -394,7 +389,7 @@ details.essay[open] {
 details.essay summary {
   cursor: pointer;
   list-style: none;
-  padding: 0.95rem 1rem;
+  padding: 0.95rem 1.05rem;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -414,17 +409,17 @@ details.essay summary span {
 }
 
 .essay-body {
-  padding: 0 1rem 1rem;
+  padding: 0 1.05rem 1rem;
   border-top: 1px solid var(--line);
 }
 
 .essay-body p {
-  margin: 1rem 0 0;
+  margin: 0.95rem 0 0;
   max-width: 72ch;
 }
 
 .resource-card ul {
-  margin: 0.7rem 0 0;
+  margin: 0.65rem 0 0;
   padding-left: 1.1rem;
 }
 
@@ -434,14 +429,14 @@ details.essay summary span {
 
 .split-end {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1.05fr 0.95fr;
   gap: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.4rem;
 }
 
 footer {
-  margin-top: 2.5rem;
-  padding-top: 1.2rem;
+  margin-top: 2.3rem;
+  padding-top: 1.25rem;
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.95rem;
@@ -453,7 +448,7 @@ footer p {
 
 .back-top {
   display: inline-block;
-  margin-top: 0.8rem;
+  margin-top: 0.75rem;
 }
 
 @media (max-width: 980px) {
@@ -465,8 +460,8 @@ footer p {
   }
 
   .site-header-inner {
-    flex-direction: column;
     align-items: flex-start;
+    flex-direction: column;
   }
 
   nav {
@@ -474,8 +469,20 @@ footer p {
   }
 }
 
+@media (max-width: 720px) {
+  .book-card {
+    grid-template-columns: 1fr;
+  }
+
+  .book-cover {
+    width: 128px;
+    min-width: 0;
+  }
+}
+
 @media (max-width: 680px) {
-  .wrap {
+  .wrap,
+  .site-header-inner {
     width: min(calc(100% - 1rem), var(--maxw));
   }
 
@@ -486,49 +493,20 @@ footer p {
   .author-card,
   .contact-card,
   .summary-card,
-  .essay-body,
-  details.essay summary {
-    padding-left: 0.9rem;
-    padding-right: 0.9rem;
+  details.essay summary,
+  .essay-body {
+    padding-left: 0.95rem;
+    padding-right: 0.95rem;
   }
 
-  .hero h1 {
-    font-size: clamp(2rem, 11vw, 3rem);
+  .hero h1,
+  .hero-title {
+    font-size: clamp(1.8rem, 10vw, 2.4rem);
   }
 
   .button,
   .button-ghost {
     width: 100%;
     min-width: 0;
-  }
-
-  .book-card {
-    grid-template-columns: 92px 1fr;
-  }
-
-  .book-cover {
-    width: 92px;
-  }
-
-  .book-copy {
-    padding: 0.9rem;
-  }
-
-  .book-cover-fallback {
-    padding: 0.7rem 0.55rem 0.65rem;
-  }
-
-  .book-cover-fallback strong {
-    font-size: 0.88rem;
-    max-width: 8ch;
-  }
-
-  .book-cover-fallback em {
-    font-size: 0.66rem;
-    max-width: 12ch;
-  }
-
-  .book-cover-fallback small {
-    font-size: 0.52rem;
   }
 }
