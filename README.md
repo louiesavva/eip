@@ -42,7 +42,7 @@ The site is intentionally simple:
 - No database
 - No JavaScript required
 
-This keeps the site easy to edit, portable, fast, and durable.
+This keeps the site easy to edit, portable, fast, and durable. 
 
 ## Structure
 
