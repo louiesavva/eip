@@ -4,6 +4,7 @@
   "episodes": [
     {
       "number": 1,
+      "title": "The universe wears no knickers: can science answer the big questions?",
       "guest": null,
       "role": null,
       "solo": true,
@@ -12,6 +13,7 @@
     },
     {
       "number": 2,
+      "title": "Existentialism, the Necker cube and the illusion of “you”",
       "guest": null,
       "role": null,
       "solo": true,
@@ -20,6 +22,7 @@
     },
     {
       "number": 3,
+      "title": "Mould behind God’s toilet: evolution, hedonism and the narrative self",
       "guest": null,
       "role": null,
       "solo": true,
@@ -28,6 +31,7 @@
     },
     {
       "number": 4,
+      "title": "Memes: the software of the mind, and why brains didn’t evolve to think",
       "guest": null,
       "role": null,
       "solo": true,
@@ -36,6 +40,7 @@
     },
     {
       "number": 5,
+      "title": "From sponge to Shakespeare: why your brain is a happy accident",
       "guest": null,
       "role": null,
       "solo": true,
@@ -44,6 +49,7 @@
     },
     {
       "number": 6,
+      "title": "What is an existential being? Cats, cows and the fear of death",
       "guest": null,
       "role": null,
       "solo": true,
@@ -52,6 +58,7 @@
     },
     {
       "number": 7,
+      "title": "The psychic beetle, and why there are still monkeys",
       "guest": null,
       "role": null,
       "solo": true,
@@ -60,6 +67,7 @@
     },
     {
       "number": 8,
+      "title": "The selfish gene: ants, altruism and a long line of copying errors",
       "guest": null,
       "role": null,
       "solo": true,
@@ -68,6 +76,7 @@
     },
     {
       "number": 9,
+      "title": "The right to be lazy: work, utopia and H.G. Wells",
       "guest": null,
       "role": null,
       "solo": true,
@@ -77,6 +86,7 @@
     },
     {
       "number": 10,
+      "title": "What counts as offensive? Swearing, and speaking from the heart",
       "guest": null,
       "role": null,
       "solo": true,
@@ -86,6 +96,7 @@
     },
     {
       "number": 11,
+      "title": "Groundhog Day, Nietzsche’s eternal return and the road not taken",
       "guest": null,
       "role": null,
       "solo": true,
@@ -94,6 +105,7 @@
     },
     {
       "number": 12,
+      "title": "Coincidences, and the man who painted the future",
       "guest": null,
       "role": null,
       "solo": true,
@@ -108,6 +120,7 @@
     },
     {
       "number": 13,
+      "title": "The silicon brain: SOMA, mind uploading and the replicant’s dilemma",
       "guest": null,
       "role": null,
       "solo": true,
@@ -116,6 +129,7 @@
     },
     {
       "number": 14,
+      "title": "Monday morning angst: what’s worth doing with today?",
       "guest": null,
       "role": null,
       "solo": true,
@@ -124,6 +138,7 @@
     },
     {
       "number": 15,
+      "title": "Most Haunted: two parapsychologists on ghost-hunting TV",
       "guest": null,
       "role": null,
       "solo": true,
@@ -132,6 +147,7 @@
     },
     {
       "number": 16,
+      "title": "The overview effect: pale blue dots, ants and an absurd universe",
       "guest": null,
       "role": null,
       "solo": true,
@@ -140,6 +156,7 @@
     },
     {
       "number": 17,
+      "title": "Where does love come from? A Valentine’s special",
       "guest": null,
       "role": null,
       "solo": true,
@@ -149,6 +166,7 @@
     },
     {
       "number": 18,
+      "title": "The power of love: courtly love, Tinder and the brain’s own opiates",
       "guest": null,
       "role": null,
       "solo": true,
@@ -158,6 +176,7 @@
     },
     {
       "number": 19,
+      "title": "Do you believe in God? A conversation in a car",
       "guest": null,
       "role": null,
       "solo": true,
@@ -166,6 +185,7 @@
     },
     {
       "number": 20,
+      "title": "Taner Edis: why is there something rather than nothing?",
       "guest": "Taner Edis",
       "role": "physicist and sceptic",
       "part": "Part one",
@@ -174,6 +194,7 @@
     },
     {
       "number": 21,
+      "title": "Taner Edis on weird science, trust and parapsychology",
       "guest": "Taner Edis",
       "role": "physicist and sceptic",
       "part": "Part two",
@@ -182,6 +203,7 @@
     },
     {
       "number": 22,
+      "title": "How old is sunlight? Photons, the drunkard’s walk and randomness",
       "guest": null,
       "role": null,
       "solo": true,
@@ -190,6 +212,7 @@
     },
     {
       "number": 23,
+      "title": "Peter Hankins on the hard problem of consciousness",
       "date": "2017-02-25",
       "guest": "Peter Hankins",
       "role": "author of the blog Conscious Entities",
@@ -199,6 +222,7 @@
     },
     {
       "number": 24,
+      "title": "Peter Hankins: why you can’t upload your mind",
       "date": "2017-02-25",
       "guest": "Peter Hankins",
       "role": "author of the blog Conscious Entities",
@@ -208,6 +232,7 @@
     },
     {
       "number": 25,
+      "title": "What is positive psychology? Science, or smoke and mirrors?",
       "date": "2017-03-01",
       "guest": null,
       "role": null,
@@ -218,6 +243,7 @@
     },
     {
       "number": 26,
+      "title": "Is life worth living? Frankl, Clarence Darrow and good-enough psychology",
       "date": "2017-03-03",
       "guest": null,
       "role": null,
@@ -228,6 +254,7 @@
     },
     {
       "number": 27,
+      "title": "Nick Brown on the positivity ratio, and how bad science spreads",
       "date": "2017-03-03",
       "guest": "Nick Brown",
       "role": "PhD student and critic",
@@ -236,6 +263,7 @@
     },
     {
       "number": 28,
+      "title": "Itai Ivtzan on positive psychology, grief and post-traumatic growth",
       "date": "2017-03-06",
       "guest": "Itai Ivtzan",
       "role": "positive psychologist",
@@ -245,6 +273,7 @@
     },
     {
       "number": 29,
+      "title": "Everything or nothing? Itai Ivtzan on meditation and meaning",
       "date": "2017-03-06",
       "guest": "Itai Ivtzan",
       "role": "positive psychologist",
@@ -254,6 +283,7 @@
     },
     {
       "number": 30,
+      "title": "Oren Harman on George Price and the riddle of kindness",
       "date": "2017-03-09",
       "guest": "Oren Harman",
       "role": "historian of science",
@@ -262,6 +292,7 @@
     },
     {
       "number": 31,
+      "title": "The Million Dollar Psychic: can a sceptic become psychic?",
       "date": "2017-03-13",
       "guest": null,
       "role": null,
@@ -271,6 +302,7 @@
     },
     {
       "number": 32,
+      "title": "Chris French: how a believer became a sceptic",
       "date": "2017-03-17",
       "guest": "Chris French",
       "role": "anomalistic psychologist",
@@ -280,6 +312,7 @@
     },
     {
       "number": 33,
+      "title": "Chris French on the Million Dollar Challenge, and the meaning of life",
       "date": "2017-03-17",
       "guest": "Chris French",
       "role": "anomalistic psychologist",
@@ -289,6 +322,7 @@
     },
     {
       "number": 34,
+      "title": "Susan Blackmore on memes, tremes and the illusion of consciousness",
       "date": "2017-03-25",
       "guest": "Susan Blackmore",
       "role": "psychologist",
@@ -297,6 +331,7 @@
     },
     {
       "number": 35,
+      "title": "Yannick Jacob on existential coaching and positive psychology",
       "date": "2017-03-29",
       "guest": "Yannick Jacob",
       "role": "existential coach",
@@ -306,6 +341,7 @@
     },
     {
       "number": 36,
+      "title": "Yannick Jacob on flow, surfing and existential resilience",
       "date": "2017-03-29",
       "guest": "Yannick Jacob",
       "role": "existential coach",
@@ -315,6 +351,7 @@
     },
     {
       "number": 37,
+      "title": "R. Scott Bakker on alien philosophy and the blind brain",
       "date": "2017-04-03",
       "guest": "R. Scott Bakker",
       "role": "fantasy novelist",
@@ -323,6 +360,7 @@
     },
     {
       "number": 38,
+      "title": "Am I a nihilist? Existential crises and secular humanism",
       "date": "2017-04-09",
       "guest": null,
       "role": null,
@@ -332,6 +370,7 @@
     },
     {
       "number": 39,
+      "title": "Misery in the Brain of the Earth Ape: you are not your past",
       "date": "2017-04-09",
       "guest": null,
       "role": null,
@@ -342,6 +381,7 @@
     },
     {
       "number": 40,
+      "title": "Free will, responsibility, and laughing at the universe",
       "date": "2017-04-09",
       "guest": null,
       "role": null,
@@ -352,6 +392,7 @@
     },
     {
       "number": 41,
+      "title": "Our only listener asks the questions: evolution, nihilism and love",
       "date": "2017-04-14",
       "guest": "Elizabeth Grant",
       "role": "a listener, possibly the only one",
@@ -361,6 +402,7 @@
     },
     {
       "number": 42,
+      "title": "Philosophy, psychology and bad science: Elizabeth Grant returns",
       "date": "2017-04-14",
       "guest": "Elizabeth Grant",
       "role": "a listener, possibly the only one",
@@ -370,6 +412,7 @@
     },
     {
       "number": 43,
+      "title": "John Marmysz: nihilism, humour and laughing at nothing",
       "date": "2017-04-18",
       "guest": "John Marmysz",
       "role": "philosopher",
@@ -379,6 +422,7 @@
     },
     {
       "number": 44,
+      "title": "John Marmysz on cinematic nihilism: Fight Club, Rollerball and Scotland",
       "date": "2017-04-18",
       "guest": "John Marmysz",
       "role": "philosopher",
@@ -388,6 +432,7 @@
     },
     {
       "number": 45,
+      "title": "The Tree of Life: Terrence Malick, dinosaurs and the way of grace",
       "date": "2017-04-24",
       "guest": null,
       "role": null,
@@ -397,6 +442,7 @@
     },
     {
       "number": 46,
+      "title": "Ann Winsper: ghost hunting and electronic voice phenomena",
       "date": "2017-04-27",
       "guest": "Ann Winsper",
       "role": "PhD researcher",
@@ -405,6 +451,7 @@
     },
     {
       "number": 47,
+      "title": "Arthur Witherall: zero ontology and why the universe exists",
       "date": "2017-05-01",
       "guest": "Arthur Witherall",
       "role": "philosopher",
@@ -413,6 +460,7 @@
     },
     {
       "number": 48,
+      "title": "Hayley Stevens: from ghost hunter to sceptic",
       "date": "2017-05-05",
       "guest": "Hayley Stevens",
       "role": "sceptical blogger",
@@ -422,6 +470,7 @@
     },
     {
       "number": 49,
+      "title": "Hayley Stevens on lake monsters, big cats and fake PhDs",
       "date": "2017-05-05",
       "guest": "Hayley Stevens",
       "role": "sceptical blogger",
@@ -431,6 +480,7 @@
     },
     {
       "number": 50,
+      "title": "Matthew Alper: the God part of the brain, and who’s the bigger nihilist",
       "date": "2017-05-08",
       "guest": "Matthew Alper",
       "role": "author",
@@ -439,6 +489,7 @@
     },
     {
       "number": 51,
+      "title": "Graham Farmelo on Paul Dirac, antimatter and beautiful equations",
       "date": "2017-05-15",
       "guest": "Graham Farmelo",
       "role": "science writer",
@@ -447,6 +498,7 @@
     },
     {
       "number": 52,
+      "title": "Cal Cooper: bereavement, hope and phone calls from the dead",
       "date": "2017-05-22",
       "guest": "Cal Cooper",
       "role": "parapsychologist",
@@ -455,6 +507,7 @@
     },
     {
       "number": 53,
+      "title": "Jeff Schaler on Thomas Szasz and the myth of mental illness",
       "date": "2017-05-29",
       "guest": "Jeff Schaler",
       "role": "psychology professor",
@@ -463,6 +516,7 @@
     },
     {
       "number": 54,
+      "title": "Emmy van Deurzen on existential therapy, Szasz and freedom’s limits",
       "date": "2017-06-05",
       "guest": "Emmy van Deurzen",
       "role": "existential psychotherapist",
@@ -471,6 +525,7 @@
     },
     {
       "number": 55,
+      "title": "Andy Martin on Sartre, surfing and watching Lee Child write",
       "date": "2017-06-12",
       "guest": "Andy Martin",
       "role": "writer",
@@ -479,6 +534,7 @@
     },
     {
       "number": 56,
+      "title": "Krissy Wilson on self-deception and why we all believe",
       "date": "2017-06-19",
       "guest": "Krissy Wilson",
       "role": "psychologist",
@@ -487,6 +543,7 @@
     },
     {
       "number": 57,
+      "title": "Kate Sweeny on the upside of pessimism and the benefits of worry",
       "date": "2017-06-26",
       "guest": "Kate Sweeny",
       "role": "psychologist",
@@ -495,6 +552,7 @@
     },
     {
       "number": 58,
+      "title": "Matt Colborn on bees, SETI and whether we’re at home in the universe",
       "date": "2017-07-03",
       "guest": "Matt Colborn",
       "role": "cognitive scientist",
@@ -503,6 +561,7 @@
     },
     {
       "number": 59,
+      "title": "Martin Seager: the only mental condition is the human condition",
       "date": "2017-07-10",
       "guest": "Martin Seager",
       "role": "clinical psychologist",
@@ -511,6 +570,7 @@
     },
     {
       "number": 60,
+      "title": "Francis O’Gorman on worrying: a literary and cultural history",
       "date": "2017-07-24",
       "guest": "Francis O’Gorman",
       "role": "academic and writer",
@@ -519,6 +579,7 @@
     },
     {
       "number": 61,
+      "title": "Brock Bastian: why pain matters to happiness",
       "date": "2017-08-07",
       "guest": "Brock Bastian",
       "role": "psychologist",
@@ -527,6 +588,7 @@
     },
     {
       "number": 62,
+      "title": "Elisha Shapiro, the Funniest Nihilist, on the Nihilist Olympics",
       "date": "2017-08-21",
       "guest": "Elisha Shapiro",
       "role": "comedian and performance artist",
