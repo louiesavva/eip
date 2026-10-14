@@ -77,7 +77,8 @@ HEAD = """<!doctype html>
           <a href="#ep-34">Susan Blackmore</a>, <a href="#ep-32">Chris French</a> and <a href="#ep-20">Taner Edis</a>. Sometimes funny, sometimes serious, sometimes profound even.
         </p>
         <p>
-          The book <a href="{book}"><em>The Existential Files</em></a> grew out of these conversations.
+          The book <a href="{book}"><em>The Existential Files</em></a> grew out of these conversations, and its
+          <a href="book-guide.html">chapter guide</a> points to the moments each chapter draws on.
           The recordings themselves are all on <a href="{channel}">YouTube</a>.
         </p>
 """

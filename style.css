@@ -447,3 +447,36 @@ mark {
   margin: 1.8rem 0 0;
   font-size: 1.3rem;
 }
+
+/* Chapter guide (book-guide.html) */
+.chapter-contents {
+  list-style: none;
+  margin: 0 0 1.4rem;
+  padding-left: 0;
+  columns: 2 16rem;
+  column-gap: 2rem;
+}
+
+.chapter-contents li {
+  margin: 0 0 0.2rem;
+  break-inside: avoid;
+}
+
+.chapter-contents .ep-num {
+  display: inline-block;
+  min-width: 1.4rem;
+}
+
+.chapter .chapter-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.chapter .ep-body .meta {
+  margin-bottom: 0.4rem;
+}
+
+.moment-source {
+  color: var(--muted);
+}
