@@ -124,9 +124,22 @@ def episode_html(ep):
     if ep.get("youtube"):
         url = f'https://www.youtube.com/watch?v={esc(ep["youtube"])}'
         meta.append(f'<a href="{url}">Watch on YouTube</a>')
+    for extra in ep.get("extras", []):
+        url = f'https://www.youtube.com/watch?v={esc(extra["youtube"])}'
+        meta.append(f'<a href="{url}">{esc(extra["label"])}</a>')
     meta_html = ' <span class="sep">|</span> '.join(meta)
     topic = ep.get("topic")
     topic_html = f"              <p>{esc(topic)}</p>\n" if topic else ""
+
+    if not (guest or ep.get("solo") or topic):
+        # No notes yet for this episode: just a one-line link.
+        return f"""          <li class="episode stub" id="ep-{n}">
+            <p class="ep-num">#{n}</p>
+            <div class="ep-body">
+              <p class="meta">{meta_html}</p>
+            </div>
+          </li>
+"""
 
     return f"""          <li class="episode" id="ep-{n}">
             <p class="ep-num">#{n}</p>
@@ -171,7 +184,18 @@ def apply_youtube_ids(data, tsv_path):
                   "role": None, "topic": None, "youtube": None}
             data["episodes"].append(ep)
             by_number[number] = ep
-        ep["youtube"] = video_id.strip()
+        video_id = video_id.strip()
+        extra = re.search(r"\b(addendum|extra|bonus)\b.*$", title, re.IGNORECASE)
+        if extra:
+            # A short follow-up to an episode, e.g. "Episode #12 - Addendum on
+            # Coincidences": list it as an extra link on that episode.
+            label = extra.group(0).strip()
+            label = label[0].upper() + label[1:].lower()
+            extras = [x for x in ep.get("extras", []) if x["youtube"] != video_id]
+            extras.append({"label": label, "youtube": video_id})
+            ep["extras"] = extras
+        else:
+            ep["youtube"] = video_id
         matched += 1
     data["episodes"].sort(key=lambda e: e["number"])
     return matched
@@ -189,7 +213,8 @@ def main():
         DATA.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         print(f"Matched {matched} YouTube videos to episodes; saved {DATA.relative_to(ROOT)}")
 
-    episodes = sorted(data["episodes"], key=lambda e: e["number"])
+    # Newest first, as podcast listings usually are.
+    episodes = sorted(data["episodes"], key=lambda e: e["number"], reverse=True)
     channel = data["youtube_channel"]
 
     parts = [HEAD.replace("{book}", BOOK_PDF).replace("{channel}", esc(channel))]

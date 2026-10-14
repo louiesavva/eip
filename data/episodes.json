@@ -3,13 +3,313 @@
   "youtube_channel": "https://www.youtube.com/@LouieSavva",
   "episodes": [
     {
+      "number": 1,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "biCtxUpW6VA"
+    },
+    {
+      "number": 2,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "yV7cxSpmbVE"
+    },
+    {
+      "number": 3,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "tue8_gEglJk"
+    },
+    {
+      "number": 4,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "1L8nYIf5di0"
+    },
+    {
+      "number": 5,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "0KkZu_0TvMs"
+    },
+    {
+      "number": 6,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "ZO-usLC-67Y"
+    },
+    {
+      "number": 7,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "5U2Ox-q_cG0"
+    },
+    {
+      "number": 8,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "YtE32JqnSR8"
+    },
+    {
+      "number": 9,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "S8FJ_QxZ21Q"
+    },
+    {
+      "number": 10,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "XV6w9XqpcoE"
+    },
+    {
+      "number": 11,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "9JCpfxoftPE"
+    },
+    {
+      "number": 12,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "oqMvduzLGos",
+      "extras": [
+        {
+          "label": "Addendum on coincidences",
+          "youtube": "jRJipbxRi-k"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "9CjeQ9PCO9E"
+    },
+    {
+      "number": 14,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "jJ6T4jSNO0o"
+    },
+    {
+      "number": 15,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "d5JqRHH8UzQ"
+    },
+    {
+      "number": 16,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "FLMMse2tCXg"
+    },
+    {
+      "number": 17,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "b3J0GsjD16U"
+    },
+    {
+      "number": 18,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "09BDTh0FnoQ"
+    },
+    {
+      "number": 19,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "hZ5F1GWCIjk"
+    },
+    {
+      "number": 20,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "ieuoZCOa9nw"
+    },
+    {
+      "number": 21,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "NEgXNQZz6rs"
+    },
+    {
+      "number": 22,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "OgYxm3jPTGM"
+    },
+    {
+      "number": 23,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "dICuMNnUvtQ"
+    },
+    {
+      "number": 24,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "A0CiN4UYfis"
+    },
+    {
+      "number": 25,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "Dq-I5UgeFGs"
+    },
+    {
+      "number": 26,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "7CZV1-dF0rE"
+    },
+    {
+      "number": 27,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "XM3Ixon34V8"
+    },
+    {
+      "number": 28,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "QzxqU4Na2Yo"
+    },
+    {
+      "number": 29,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "Bq6in1vE-ok"
+    },
+    {
+      "number": 30,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "lXnAdA9YSQU"
+    },
+    {
+      "number": 31,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "734KlB55U2I"
+    },
+    {
+      "number": 32,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "5dHnIAFjcJk"
+    },
+    {
+      "number": 33,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "gQ-JLxlTGsA"
+    },
+    {
+      "number": 34,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "QuB0-Cvergg"
+    },
+    {
+      "number": 35,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "5ZiF2S31DrE"
+    },
+    {
+      "number": 36,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "c6lnH1sStbk"
+    },
+    {
+      "number": 37,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "ko0ZJ2x-Dw8"
+    },
+    {
+      "number": 38,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "MygMKZU7nkI"
+    },
+    {
+      "number": 39,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "XNml1iID4Fw"
+    },
+    {
+      "number": 40,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "Bacu09iKlhc"
+    },
+    {
+      "number": 41,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "y0ZVcoUwU_U"
+    },
+    {
+      "number": 42,
+      "guest": null,
+      "role": null,
+      "topic": null,
+      "youtube": "CsSQ7egu_dM"
+    },
+    {
       "number": 43,
       "date": "2017-04-18",
       "guest": "John Marmysz",
       "role": "philosopher",
       "part": "Part one",
       "topic": "What nihilism actually is, humour as a response to it, and where existentialism fits.",
-      "youtube": null
+      "youtube": "HnVS6QceQms"
     },
     {
       "number": 44,
@@ -18,7 +318,7 @@
       "role": "philosopher",
       "part": "Part two",
       "topic": "His novel The Nihilist, and nihilism in the cinema.",
-      "youtube": null
+      "youtube": "WBCFNZrn7yc"
     },
     {
       "number": 45,
@@ -26,7 +326,7 @@
       "guest": null,
       "role": null,
       "topic": "Just the two of us, on Terrence Malick’s The Tree of Life and what it says about existence.",
-      "youtube": null,
+      "youtube": "U3C9x1A3PMU",
       "solo": true
     },
     {
@@ -35,7 +335,7 @@
       "guest": "Ann Winsper",
       "role": "PhD researcher",
       "topic": "Ghost hunting, electronic voice phenomena, and the ordinary explanations behind them.",
-      "youtube": null
+      "youtube": "ZOBKTsuPW28"
     },
     {
       "number": 47,
@@ -43,7 +343,7 @@
       "guest": "Arthur Witherall",
       "role": "philosopher",
       "topic": "Why there is something rather than nothing, including David Pearce’s Zero Ontology.",
-      "youtube": null
+      "youtube": "zxVPxKUfSzU"
     },
     {
       "number": 48,
@@ -52,7 +352,7 @@
       "role": "sceptical blogger",
       "part": "Part one",
       "topic": "Ghosts, ghost hunters, and scepticism.",
-      "youtube": null
+      "youtube": "ip1mKORj-OE"
     },
     {
       "number": 49,
@@ -61,7 +361,7 @@
       "role": "sceptical blogger",
       "part": "Part two",
       "topic": "Cryptozoology and fake paranormal researchers.",
-      "youtube": null
+      "youtube": "obpWGyumu9Q"
     },
     {
       "number": 50,
@@ -69,7 +369,7 @@
       "guest": "Matthew Alper",
       "role": "author",
       "topic": "Religion as an evolved way of coping with existence, and an argument about nihilism.",
-      "youtube": null
+      "youtube": "J3igKO7aWv0"
     },
     {
       "number": 51,
@@ -77,7 +377,7 @@
       "guest": "Graham Farmelo",
       "role": "science writer",
       "topic": "Paul Dirac, the strangest man in physics, and the questions his work raises.",
-      "youtube": null
+      "youtube": "LnXNUB7w55I"
     },
     {
       "number": 52,
@@ -85,7 +385,7 @@
       "guest": "Cal Cooper",
       "role": "parapsychologist",
       "topic": "Bereavement, ghosts, and the place of hope.",
-      "youtube": null
+      "youtube": "fwP7kb6sGuI"
     },
     {
       "number": 53,
@@ -93,7 +393,7 @@
       "guest": "Jeff Schaler",
       "role": "psychology professor",
       "topic": "Thomas Szasz and The Myth of Mental Illness.",
-      "youtube": null
+      "youtube": "KZ1bNDPzy3k"
     },
     {
       "number": 54,
@@ -101,7 +401,7 @@
       "guest": "Emmy van Deurzen",
       "role": "existential psychotherapist",
       "topic": "Existential therapy, Szasz on mental illness, and politics as an existential matter.",
-      "youtube": null
+      "youtube": "BJVnzmnSDTM"
     },
     {
       "number": 55,
@@ -109,7 +409,7 @@
       "guest": "Andy Martin",
       "role": "writer",
       "topic": "Camus and Sartre, writing about Lee Child, and surfing.",
-      "youtube": null
+      "youtube": "NE4B5w543W4"
     },
     {
       "number": 56,
@@ -117,7 +417,7 @@
       "guest": "Krissy Wilson",
       "role": "psychologist",
       "topic": "Why people believe in the paranormal: self-deception, placebo, and critical thinking.",
-      "youtube": null
+      "youtube": "OlrkquUZTdY"
     },
     {
       "number": 57,
@@ -125,7 +425,7 @@
       "guest": "Kate Sweeny",
       "role": "psychologist",
       "topic": "The costs of positive thinking, and the case for bracing for the worst.",
-      "youtube": null
+      "youtube": "6qfM-h--jms"
     },
     {
       "number": 58,
@@ -133,7 +433,7 @@
       "guest": "Matt Colborn",
       "role": "cognitive scientist",
       "topic": "Bees, machine learning, consciousness, and SETI.",
-      "youtube": null
+      "youtube": "42s65yfR2_8"
     },
     {
       "number": 59,
@@ -141,7 +441,7 @@
       "guest": "Martin Seager",
       "role": "clinical psychologist",
       "topic": "Mental health, the limits of psychiatry, men and gender, and whether psychology is a soft science.",
-      "youtube": null
+      "youtube": "BVmwr3U_Uew"
     },
     {
       "number": 60,
@@ -149,7 +449,7 @@
       "guest": "Francis O’Gorman",
       "role": "literary scholar",
       "topic": "Worry, and his literary and cultural history of it.",
-      "youtube": null
+      "youtube": "NsXYTXZS484"
     },
     {
       "number": 61,
@@ -157,7 +457,7 @@
       "guest": "Brock Bastian",
       "role": "psychologist",
       "topic": "Why pain matters to happiness, how chasing pleasure backfires, and vegetarianism as a moral question.",
-      "youtube": null
+      "youtube": "9roCzd1mM-4"
     },
     {
       "number": 62,
@@ -165,7 +465,7 @@
       "guest": "Elisha Shapiro",
       "role": "comedian and performance artist",
       "topic": "Nihilism, the Nihilist Olympics, and running for president.",
-      "youtube": null
+      "youtube": "jrMp6IAtIhM"
     }
   ]
 }

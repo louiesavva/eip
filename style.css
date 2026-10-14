@@ -322,3 +322,7 @@ footer p {
     width: 110px;
   }
 }
+
+.episode.stub {
+  padding: 0.45rem 0;
+}
