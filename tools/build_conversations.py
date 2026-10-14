@@ -89,7 +89,7 @@ SEARCH = """        <form class="search" id="search" role="search" data-index="d
             <button type="submit">Search</button>
           </div>
           <p class="small-note">
-            Searches YouTube’s automatic captions for {covered} of the {total} episodes, so expect the odd
+            Searches YouTube’s automatic captions for {coverage}, so expect the odd
             mishearing. Each result links to that moment in the video.
           </p>
         </form>
@@ -240,7 +240,9 @@ def main():
     script = ""
     if SEARCH_INDEX.exists():
         covered = json.loads(SEARCH_INDEX.read_text(encoding="utf-8"))["episodes_covered"]
-        parts.append(SEARCH.replace("{covered}", str(covered)).replace("{total}", str(len(episodes))))
+        total = len(episodes)
+        coverage = f"all {total} episodes" if covered >= total else f"{covered} of the {total} episodes"
+        parts.append(SEARCH.replace("{coverage}", coverage))
         parts.append('        <h2 class="list-title">All episodes</h2>\n')
         script = '  <script src="assets/search.js" defer></script>\n'
     parts.append('        <ol class="episode-list">\n')

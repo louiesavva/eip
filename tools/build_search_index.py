@@ -3,7 +3,7 @@
 
 Fetch the captions once (each file is named by its video ID):
 
-    yt-dlp --skip-download --write-auto-subs --sub-langs en --convert-subs srt \
+    yt-dlp --skip-download --write-auto-subs --sub-langs "en.*" --convert-subs srt --sleep-subtitles 5 \
         -o "%(id)s" "https://www.youtube.com/@LouieSavva/videos"
 
 Then point this script at the folder they landed in:
@@ -94,7 +94,11 @@ def main():
     if len(sys.argv) != 2:
         sys.exit(__doc__)
     folder = Path(sys.argv[1])
-    files = {p.name.split(".")[0]: p for p in folder.glob("*.srt")}
+    # yt-dlp can save several English tracks per video (e.g. .en.srt and
+    # .en-orig.srt). Use .en.srt when there is one, so the choice is stable.
+    files = {}
+    for p in sorted(folder.glob("*.srt"), key=lambda p: p.name.endswith(".en.srt")):
+        files[p.name.split(".")[0]] = p
 
     episodes = json.loads(EPISODES.read_text(encoding="utf-8"))["episodes"]
     items, missing = [], []

@@ -65,7 +65,7 @@ without JavaScript the search box simply doesn't appear and the episode list wor
 reads `data/search-index.json`, built from YouTube's automatic captions:
 
 ```sh
-yt-dlp --skip-download --write-auto-subs --sub-langs en --convert-subs srt \
+yt-dlp --skip-download --write-auto-subs --sub-langs "en.*" --convert-subs srt --sleep-subtitles 5 \
     -o "%(id)s" "https://www.youtube.com/@LouieSavva/videos"
 python3 tools/build_search_index.py path/to/srt-folder
 python3 tools/build_conversations.py
