@@ -22,7 +22,7 @@ The site currently includes:
   - Resources
   - Author
   - Contact
-- **Conversations** (`conversations.html`): an index of *The Existential Files* podcast episodes
+- **Conversations** (`conversations.html`): an index of *The Existential Files* podcast episodes, with a search across the episode transcripts
 - **Selected essays**, including:
   - *When Syntax Becomes Skin*
 - **Books**
@@ -60,6 +60,17 @@ yt-dlp --flat-playlist --print "%(id)s %(title)s" \
 python3 tools/build_conversations.py --youtube episodes.tsv
 ```
 
+The transcript search on the Conversations page is the only JavaScript on the site, and it is optional:
+without JavaScript the search box simply doesn't appear and the episode list works as before. The search
+reads `data/search-index.json`, built from YouTube's automatic captions:
+
+```sh
+yt-dlp --skip-download --write-auto-subs --sub-langs en --convert-subs srt \
+    -o "%(id)s" "https://www.youtube.com/@LouieSavva/videos"
+python3 tools/build_search_index.py path/to/srt-folder
+python3 tools/build_conversations.py
+```
+
 ## Structure
 
 ```text
@@ -70,10 +81,13 @@ python3 tools/build_conversations.py --youtube episodes.tsv
 ├── essays/
 │   └── when-syntax-becomes-skin.html
 ├── data/
-│   └── episodes.json
+│   ├── episodes.json
+│   └── search-index.json     (generated from captions)
 ├── tools/
-│   └── build_conversations.py
+│   ├── build_conversations.py
+│   └── build_search_index.py
 └── assets/
+    ├── search.js
     ├── og-image.jpg
     ├── EverythingIsPointless_LouieSavva.pdf
     ├── EverythingIsPointless_LouieSavva.epub

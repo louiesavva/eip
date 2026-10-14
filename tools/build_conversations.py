@@ -24,6 +24,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "episodes.json"
+SEARCH_INDEX = ROOT / "data" / "search-index.json"
 OUT = ROOT / "conversations.html"
 
 BOOK_PDF = "/assets/the_existential_files.pdf"
@@ -81,6 +82,21 @@ HEAD = """<!doctype html>
         </p>
 """
 
+SEARCH = """        <form class="search" id="search" role="search" data-index="data/search-index.json" hidden>
+          <label for="q">Search what was said</label>
+          <div class="search-row">
+            <input id="q" name="q" type="search" placeholder="free will, death, Camus…" autocomplete="off" />
+            <button type="submit">Search</button>
+          </div>
+          <p class="small-note">
+            Searches YouTube’s automatic captions for {covered} of the {total} episodes, so expect the odd
+            mishearing. Each result links to that moment in the video.
+          </p>
+        </form>
+        <p id="search-status" class="search-status" aria-live="polite"></p>
+        <ol id="search-results" class="search-results" hidden></ol>
+"""
+
 FOOT = """      </section>
     </main>
 
@@ -89,7 +105,7 @@ FOOT = """      </section>
       <p><a href="#top">Back to top</a></p>
     </footer>
   </div>
-</body>
+{script}</body>
 </html>
 """
 
@@ -146,7 +162,7 @@ def episode_html(ep):
     return f"""          <li class="episode" id="ep-{n}">
             <p class="ep-num">#{n}</p>
             <div class="ep-body">
-              <h2>{heading}</h2>
+              <h3>{heading}</h3>
 {topic_html}              <p class="meta">{meta_html}</p>
             </div>
           </li>
@@ -221,10 +237,16 @@ def main():
 
     parts = [HEAD.replace("{book}", BOOK_PDF).replace("{channel}", esc(channel))]
     parts.append(missing_note([e["number"] for e in episodes], esc(channel)))
+    script = ""
+    if SEARCH_INDEX.exists():
+        covered = json.loads(SEARCH_INDEX.read_text(encoding="utf-8"))["episodes_covered"]
+        parts.append(SEARCH.replace("{covered}", str(covered)).replace("{total}", str(len(episodes))))
+        parts.append('        <h2 class="list-title">All episodes</h2>\n')
+        script = '  <script src="assets/search.js" defer></script>\n'
     parts.append('        <ol class="episode-list">\n')
     parts.extend(episode_html(ep) for ep in episodes)
     parts.append("        </ol>\n")
-    parts.append(FOOT)
+    parts.append(FOOT.replace("{script}", script))
 
     OUT.write_text("".join(parts), encoding="utf-8")
     print(f"Wrote {OUT.relative_to(ROOT)} with {len(episodes)} episodes")
