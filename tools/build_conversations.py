@@ -125,13 +125,19 @@ def episode_html(ep):
     guest = ep.get("guest")
     role = ep.get("role")
     if guest:
-        heading = f'<span class="ep-guest">{esc(guest)}</span>'
+        who = f'<span class="ep-guest">{esc(guest)}</span>'
         if role:
-            heading += f' <span class="ep-role">{esc(role)}</span>'
+            who += f' <span class="ep-role">{esc(role)}</span>'
     elif ep.get("solo"):
-        heading = '<span class="ep-guest">Louie and Matthew</span> <span class="ep-role">no guest</span>'
+        who = '<span class="ep-guest">Louie and Matthew</span> <span class="ep-role">no guest</span>'
     else:
-        heading = f'<span class="ep-guest">Episode {n}</span>'
+        who = f'<span class="ep-guest">Episode {n}</span>'
+    if ep.get("title"):
+        # The episode's title on YouTube is the heading; who was in it goes underneath.
+        heading = esc(ep["title"])
+        who_html = f'              <p class="ep-who">{who}</p>\n'
+    else:
+        heading, who_html = who, ""
 
     meta = []
     if ep.get("part"):
@@ -164,7 +170,7 @@ def episode_html(ep):
             <p class="ep-num">#{n}</p>
             <div class="ep-body">
               <h3>{heading}</h3>
-{topic_html}              <p class="meta">{meta_html}</p>
+{who_html}{topic_html}              <p class="meta">{meta_html}</p>
             </div>
           </li>
 """

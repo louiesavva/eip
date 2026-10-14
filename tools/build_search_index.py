@@ -79,6 +79,8 @@ def segments(path):
 
 
 def display_title(ep):
+    if ep.get("title"):
+        return ep["title"]
     if ep.get("guest"):
         title = ep["guest"]
     elif ep.get("solo"):

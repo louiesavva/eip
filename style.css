@@ -480,3 +480,11 @@ mark {
 .moment-source {
   color: var(--muted);
 }
+
+.ep-body .ep-who {
+  margin-bottom: 0.15rem;
+}
+
+.ep-who .ep-guest {
+  font-weight: 700;
+}
