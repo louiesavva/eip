@@ -1,0 +1,171 @@
+{
+  "_note": "Source for conversations.html. Edit here, then run: python3 tools/build_conversations.py",
+  "youtube_channel": "https://www.youtube.com/@LouieSavva",
+  "episodes": [
+    {
+      "number": 43,
+      "date": "2017-04-18",
+      "guest": "John Marmysz",
+      "role": "philosopher",
+      "part": "Part one",
+      "topic": "What nihilism actually is, humour as a response to it, and where existentialism fits.",
+      "youtube": null
+    },
+    {
+      "number": 44,
+      "date": "2017-04-18",
+      "guest": "John Marmysz",
+      "role": "philosopher",
+      "part": "Part two",
+      "topic": "His novel The Nihilist, and nihilism in the cinema.",
+      "youtube": null
+    },
+    {
+      "number": 45,
+      "date": "2017-04-24",
+      "guest": null,
+      "role": null,
+      "topic": "Just the two of us, on Terrence Malick’s The Tree of Life and what it says about existence.",
+      "youtube": null,
+      "solo": true
+    },
+    {
+      "number": 46,
+      "date": "2017-04-27",
+      "guest": "Ann Winsper",
+      "role": "PhD researcher",
+      "topic": "Ghost hunting, electronic voice phenomena, and the ordinary explanations behind them.",
+      "youtube": null
+    },
+    {
+      "number": 47,
+      "date": "2017-05-01",
+      "guest": "Arthur Witherall",
+      "role": "philosopher",
+      "topic": "Why there is something rather than nothing, including David Pearce’s Zero Ontology.",
+      "youtube": null
+    },
+    {
+      "number": 48,
+      "date": "2017-05-05",
+      "guest": "Hayley Stevens",
+      "role": "sceptical blogger",
+      "part": "Part one",
+      "topic": "Ghosts, ghost hunters, and scepticism.",
+      "youtube": null
+    },
+    {
+      "number": 49,
+      "date": "2017-05-05",
+      "guest": "Hayley Stevens",
+      "role": "sceptical blogger",
+      "part": "Part two",
+      "topic": "Cryptozoology and fake paranormal researchers.",
+      "youtube": null
+    },
+    {
+      "number": 50,
+      "date": "2017-05-08",
+      "guest": "Matthew Alper",
+      "role": "author",
+      "topic": "Religion as an evolved way of coping with existence, and an argument about nihilism.",
+      "youtube": null
+    },
+    {
+      "number": 51,
+      "date": "2017-05-15",
+      "guest": "Graham Farmelo",
+      "role": "science writer",
+      "topic": "Paul Dirac, the strangest man in physics, and the questions his work raises.",
+      "youtube": null
+    },
+    {
+      "number": 52,
+      "date": "2017-05-22",
+      "guest": "Cal Cooper",
+      "role": "parapsychologist",
+      "topic": "Bereavement, ghosts, and the place of hope.",
+      "youtube": null
+    },
+    {
+      "number": 53,
+      "date": "2017-05-29",
+      "guest": "Jeff Schaler",
+      "role": "psychology professor",
+      "topic": "Thomas Szasz and The Myth of Mental Illness.",
+      "youtube": null
+    },
+    {
+      "number": 54,
+      "date": "2017-06-05",
+      "guest": "Emmy van Deurzen",
+      "role": "existential psychotherapist",
+      "topic": "Existential therapy, Szasz on mental illness, and politics as an existential matter.",
+      "youtube": null
+    },
+    {
+      "number": 55,
+      "date": "2017-06-12",
+      "guest": "Andy Martin",
+      "role": "writer",
+      "topic": "Camus and Sartre, writing about Lee Child, and surfing.",
+      "youtube": null
+    },
+    {
+      "number": 56,
+      "date": "2017-06-19",
+      "guest": "Krissy Wilson",
+      "role": "psychologist",
+      "topic": "Why people believe in the paranormal: self-deception, placebo, and critical thinking.",
+      "youtube": null
+    },
+    {
+      "number": 57,
+      "date": "2017-06-26",
+      "guest": "Kate Sweeny",
+      "role": "psychologist",
+      "topic": "The costs of positive thinking, and the case for bracing for the worst.",
+      "youtube": null
+    },
+    {
+      "number": 58,
+      "date": "2017-07-03",
+      "guest": "Matt Colborn",
+      "role": "cognitive scientist",
+      "topic": "Bees, machine learning, consciousness, and SETI.",
+      "youtube": null
+    },
+    {
+      "number": 59,
+      "date": "2017-07-10",
+      "guest": "Martin Seager",
+      "role": "clinical psychologist",
+      "topic": "Mental health, the limits of psychiatry, men and gender, and whether psychology is a soft science.",
+      "youtube": null
+    },
+    {
+      "number": 60,
+      "date": "2017-07-24",
+      "guest": "Francis O’Gorman",
+      "role": "literary scholar",
+      "topic": "Worry, and his literary and cultural history of it.",
+      "youtube": null
+    },
+    {
+      "number": 61,
+      "date": "2017-08-07",
+      "guest": "Brock Bastian",
+      "role": "psychologist",
+      "topic": "Why pain matters to happiness, how chasing pleasure backfires, and vegetarianism as a moral question.",
+      "youtube": null
+    },
+    {
+      "number": 62,
+      "date": "2017-08-21",
+      "guest": "Elisha Shapiro",
+      "role": "comedian and performance artist",
+      "topic": "Nihilism, the Nihilist Olympics, and running for president.",
+      "youtube": null
+    }
+  ]
+}
