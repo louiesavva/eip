@@ -1,0 +1,89 @@
+/* Styles for the EPUB editions made by make_epubs.py. Kept simple: reading
+   systems override most typography, so this only sets structure. */
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.5;
+  margin: 0 5%;
+  text-align: left;
+}
+
+h1 {
+  font-size: 1.6em;
+  line-height: 1.2;
+  margin: 2em 0 1em;
+  page-break-before: always;
+}
+
+h2 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  margin: 1.8em 0 0.8em;
+}
+
+p {
+  margin: 0 0 0.8em;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Scene breaks: * * * in the print edition. */
+hr {
+  border: 0;
+  height: auto;
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+hr::after {
+  content: "* * *";
+  letter-spacing: 0.5em;
+}
+
+/* Against Certainty: a quotation and its attribution. */
+div.quotation {
+  margin: 1.4em 1.5em;
+}
+
+div.quotation p {
+  margin-bottom: 0.4em;
+}
+
+span.attribution {
+  display: block;
+  text-align: right;
+  font-style: italic;
+}
+
+/* The Existential Files: the authors' sign-off. */
+div.signature {
+  text-align: right;
+  margin-top: 1.5em;
+}
+
+div.signature .line-block,
+div.line-block {
+  margin: 0;
+}
+
+/* Index of Authors: a plain list. */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin: 0 0 0.25em;
+}
+
+section.footnotes,
+aside.footnotes {
+  font-size: 0.9em;
+}
+
+h1.afterword,
+section.afterword h1 {
+  font-size: 1.2em;
+}

@@ -23,9 +23,10 @@ The site currently includes:
   - Author
   - Contact
 - **Conversations** (`conversations.html`): an index of *The Existential Files* podcast episodes, with a search across the episode transcripts
+- **Chapter guide** (`book-guide.html`): which moments in the conversations each chapter of *The Existential Files* draws on
 - **Selected essays**, including:
   - *When Syntax Becomes Skin*
-- **Books**
+- **Books**, each as a PDF and an EPUB
   - *Everything Is Pointless*
   - *Against Certainty*
   - *The Existential Files* (with Dr Matthew Smith)
@@ -71,26 +72,49 @@ python3 tools/build_search_index.py path/to/srt-folder
 python3 tools/build_conversations.py
 ```
 
+The chapter guide is generated the same way, from `data/book-guide.json`, where each moment is an
+episode number, a time in seconds and a short note:
+
+```sh
+python3 tools/build_book_guide.py
+```
+
+The EPUBs of *Against Certainty* and *The Existential Files* are made from their PDFs, which stay the
+masters. After replacing a PDF, rebuild its EPUB and commit both (needs `pdftohtml` from poppler-utils
+and `pandoc`; `pip install wordfreq` helps repair words hyphenated across lines):
+
+```sh
+python3 tools/make_epubs.py            # or: python3 tools/make_epubs.py against
+```
+
 ## Structure
 
 ```text
 .
 ├── index.html
 ├── conversations.html        (generated; edit data/episodes.json)
+├── book-guide.html           (generated; edit data/book-guide.json)
 ├── style.css
 ├── essays/
 │   └── when-syntax-becomes-skin.html
 ├── data/
 │   ├── episodes.json
+│   ├── book-guide.json
 │   └── search-index.json     (generated from captions)
 ├── tools/
 │   ├── build_conversations.py
-│   └── build_search_index.py
+│   ├── build_book_guide.py
+│   ├── build_search_index.py
+│   ├── make_epubs.py         (EPUBs from the PDFs)
+│   ├── pdf2md.py
+│   └── epub.css
 └── assets/
     ├── search.js
     ├── og-image.jpg
     ├── EverythingIsPointless_LouieSavva.pdf
     ├── EverythingIsPointless_LouieSavva.epub
     ├── Against_Certainty_LouieSavva.pdf
-    └── the_existential_files.pdf
+    ├── Against_Certainty_LouieSavva.epub   (generated from the PDF)
+    ├── the_existential_files.pdf
+    └── the_existential_files.epub          (generated from the PDF)
 ```
