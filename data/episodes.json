@@ -6,84 +6,98 @@
       "number": 1,
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "topic": "The first episode. Can science answer existential questions? And does the universe wear knickers?",
       "youtube": "biCtxUpW6VA"
     },
     {
       "number": 2,
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "topic": "Existentialism and the nature of existence; the Necker cube and the illusion of “you”.",
       "youtube": "yV7cxSpmbVE"
     },
     {
       "number": 3,
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "topic": "Evolution on God’s toilet, hedonism, and what sets humans apart from other animals: the narrative self.",
       "youtube": "tue8_gEglJk"
     },
     {
       "number": 4,
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "topic": "Memes, language and evolution.",
       "youtube": "1L8nYIf5di0"
     },
     {
       "number": 5,
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "topic": "More on the evolution of the brain. Also Cher, and armpit farting.",
       "youtube": "0KkZu_0TvMs"
     },
     {
       "number": 6,
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "topic": "What it means to be an existential being.",
       "youtube": "ZO-usLC-67Y"
     },
     {
       "number": 7,
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "topic": "Blogging, a parapsychology PhD, the psychic beetle, misunderstandings about this site, why monkeys and fish still exist, and Darwin’s voyage on the Beagle.",
       "youtube": "5U2Ox-q_cG0"
     },
     {
       "number": 8,
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "topic": "Altruism, social animals like ants, The Selfish Gene, and how genetic errors get passed on.",
       "youtube": "YtE32JqnSR8"
     },
     {
       "number": 9,
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "topic": "Waking up and living the life; work and the right to be lazy; utopias and H.G. Wells; group psychology, Machiavellian intelligence and social loafing.",
+      "note": "Contains swearing",
       "youtube": "S8FJ_QxZ21Q"
     },
     {
       "number": 10,
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "topic": "What counts as offensive: swearing and the salacious.",
+      "note": "Contains swearing",
       "youtube": "XV6w9XqpcoE"
     },
     {
       "number": 11,
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "topic": "A Groundhog Day episode.",
       "youtube": "9JCpfxoftPE"
     },
     {
       "number": 12,
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "topic": "Coincidences, and the man who paints the future.",
       "youtube": "oqMvduzLGos",
       "extras": [
         {
@@ -96,210 +110,262 @@
       "number": 13,
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "topic": "Artificial intelligence, the game SOMA, the ethics of experimenting on consciousness, and existential questions seen through the mind of an AI.",
       "youtube": "9CjeQ9PCO9E"
     },
     {
       "number": 14,
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "topic": "What is the point of all these episodes? Existential angst, travel, risk and gambling, and the academic daily grind.",
       "youtube": "jJ6T4jSNO0o"
     },
     {
       "number": 15,
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "topic": "Academic parapsychology versus paranormal television: Most Haunted, Derek Acorah, The Blair Witch Project, and sceptics.",
       "youtube": "d5JqRHH8UzQ"
     },
     {
       "number": 16,
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "topic": "The overview effect, the pale blue dot, and how a change of perspective changes the existential questions.",
       "youtube": "FLMMse2tCXg"
     },
     {
       "number": 17,
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "part": "Part one",
+      "topic": "A Valentine’s Day special on the origin of love.",
       "youtube": "b3J0GsjD16U"
     },
     {
       "number": 18,
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "part": "Part two",
+      "topic": "Love continued: courtly, contemporary, platonic and existential love, kinship, sex and sexuality.",
       "youtube": "09BDTh0FnoQ"
     },
     {
       "number": 19,
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "topic": "God and whether it exists, and why the universe exists at all.",
       "youtube": "hZ5F1GWCIjk"
     },
     {
       "number": 20,
-      "guest": null,
-      "role": null,
-      "topic": null,
+      "guest": "Taner Edis",
+      "role": "physicist and sceptic",
+      "part": "Part one",
+      "topic": "Why the universe exists, and whether that is even a fair question to ask of it.",
       "youtube": "ieuoZCOa9nw"
     },
     {
       "number": 21,
-      "guest": null,
-      "role": null,
-      "topic": null,
+      "guest": "Taner Edis",
+      "role": "physicist and sceptic",
+      "part": "Part two",
+      "topic": "The university course he teaches on “Weird Science”, and parapsychology.",
       "youtube": "NEgXNQZz6rs"
     },
     {
       "number": 22,
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "topic": "Light from the sun, photons, the two ways people react to facts, the drunkard’s walk and random processes.",
       "youtube": "OgYxm3jPTGM"
     },
     {
       "number": 23,
-      "guest": null,
-      "role": null,
-      "topic": null,
+      "date": "2017-02-25",
+      "guest": "Peter Hankins",
+      "role": "author of the blog Conscious Entities",
+      "part": "Part one",
+      "topic": "The mysteries of consciousness, and the hard and soft problems.",
       "youtube": "dICuMNnUvtQ"
     },
     {
       "number": 24,
-      "guest": null,
-      "role": null,
-      "topic": null,
+      "date": "2017-02-25",
+      "guest": "Peter Hankins",
+      "role": "author of the blog Conscious Entities",
+      "part": "Part two",
+      "topic": "The Brain Preservation Foundation, uploading a brain to a computer, and why the universe exists.",
       "youtube": "A0CiN4UYfis"
     },
     {
       "number": 25,
+      "date": "2017-03-01",
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "part": "Part one",
+      "topic": "Positive psychology, a subject close to Matthew’s heart. What is it, is it science, and can it improve people’s lives?",
       "youtube": "Dq-I5UgeFGs"
     },
     {
       "number": 26,
+      "date": "2017-03-03",
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "part": "Part two",
+      "topic": "Positive psychology continued, and whether life is worth living.",
       "youtube": "7CZV1-dF0rE"
     },
     {
       "number": 27,
-      "guest": null,
-      "role": null,
-      "topic": null,
+      "date": "2017-03-03",
+      "guest": "Nick Brown",
+      "role": "PhD student and critic",
+      "topic": "His critique of positive psychology, including the critical positivity ratio.",
       "youtube": "XM3Ixon34V8"
     },
     {
       "number": 28,
-      "guest": null,
-      "role": null,
-      "topic": null,
+      "date": "2017-03-06",
+      "guest": "Itai Ivtzan",
+      "role": "positive psychologist",
+      "part": "Part one",
+      "topic": "Positive psychology, PhDs, Viktor Frankl, growth, and second wave positive psychology.",
       "youtube": "QzxqU4Na2Yo"
     },
     {
       "number": 29,
-      "guest": null,
-      "role": null,
-      "topic": null,
+      "date": "2017-03-06",
+      "guest": "Itai Ivtzan",
+      "role": "positive psychologist",
+      "part": "Part two",
+      "topic": "More on PhDs, parapsychology, and the meaning of life.",
       "youtube": "Bq6in1vE-ok"
     },
     {
       "number": 30,
-      "guest": null,
-      "role": null,
-      "topic": null,
+      "date": "2017-03-09",
+      "guest": "Oren Harman",
+      "role": "historian of science",
+      "topic": "The Price of Altruism: the extraordinary and ultimately sad story of George Price, and his own take on existentialism.",
       "youtube": "lXnAdA9YSQU"
     },
     {
       "number": 31,
+      "date": "2017-03-13",
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "topic": "The Million Dollar Psychic, paranormal experiences, and UFOs.",
       "youtube": "734KlB55U2I"
     },
     {
       "number": 32,
-      "guest": null,
-      "role": null,
-      "topic": null,
+      "date": "2017-03-17",
+      "guest": "Chris French",
+      "role": "anomalistic psychologist",
+      "part": "Part one",
+      "topic": "Anomalistic psychology and parapsychology, with Louie’s old PhD supervisor.",
       "youtube": "5dHnIAFjcJk"
     },
     {
       "number": 33,
-      "guest": null,
-      "role": null,
-      "topic": null,
+      "date": "2017-03-17",
+      "guest": "Chris French",
+      "role": "anomalistic psychologist",
+      "part": "Part two",
+      "topic": "More anomalistic psychology and parapsychology, then positive psychology and the meaning of life.",
       "youtube": "gQ-JLxlTGsA"
     },
     {
       "number": 34,
-      "guest": null,
-      "role": null,
-      "topic": null,
+      "date": "2017-03-25",
+      "guest": "Susan Blackmore",
+      "role": "psychologist",
+      "topic": "Memes and tremes, technology and AI, consciousness and the self, drugs, hallucinations and altered states.",
       "youtube": "QuB0-Cvergg"
     },
     {
       "number": 35,
-      "guest": null,
-      "role": null,
-      "topic": null,
+      "date": "2017-03-29",
+      "guest": "Yannick Jacob",
+      "role": "existential coach",
+      "part": "Part one",
+      "topic": "Suspicions about positive psychology, belief in God, spirituality, and existentialism.",
       "youtube": "5ZiF2S31DrE"
     },
     {
       "number": 36,
-      "guest": null,
-      "role": null,
-      "topic": null,
+      "date": "2017-03-29",
+      "guest": "Yannick Jacob",
+      "role": "existential coach",
+      "part": "Part two",
+      "topic": "Who counts as an existential being, existential coaching, flow, risk and happiness, and how to live.",
       "youtube": "c6lnH1sStbk"
     },
     {
       "number": 37,
-      "guest": null,
-      "role": null,
-      "topic": null,
+      "date": "2017-04-03",
+      "guest": "R. Scott Bakker",
+      "role": "fantasy novelist",
+      "topic": "His paper On Alien Philosophy, blind brain theory, and consciousness.",
       "youtube": "ko0ZJ2x-Dw8"
     },
     {
       "number": 38,
+      "date": "2017-04-09",
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "topic": "Existential crises, nihilism and secular humanism.",
       "youtube": "MygMKZU7nkI"
     },
     {
       "number": 39,
+      "date": "2017-04-09",
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "part": "Part one",
+      "topic": "Louie’s essay Misery in the Brain of the Earth Ape: biology and existence, the past and identity, and evolution.",
       "youtube": "XNml1iID4Fw"
     },
     {
       "number": 40,
+      "date": "2017-04-09",
       "guest": null,
       "role": null,
-      "topic": null,
+      "solo": true,
+      "part": "Part two",
+      "topic": "The essay continued: free will and determinism, existential responsibility, morality, genes and psychopathy.",
       "youtube": "Bacu09iKlhc"
     },
     {
       "number": 41,
-      "guest": null,
-      "role": null,
-      "topic": null,
+      "date": "2017-04-14",
+      "guest": "Elizabeth Grant",
+      "role": "a listener, possibly the only one",
+      "part": "Part one",
+      "topic": "How the podcast is going, artificial selection, kinds of nihilism, love, and objective truth.",
       "youtube": "y0ZVcoUwU_U"
     },
     {
       "number": 42,
-      "guest": null,
-      "role": null,
-      "topic": null,
+      "date": "2017-04-14",
+      "guest": "Elizabeth Grant",
+      "role": "a listener, possibly the only one",
+      "part": "Part two",
+      "topic": "Popper and falsifiability, Vygotsky, psychologists’ motives, and positive psychology and happiness.",
       "youtube": "CsSQ7egu_dM"
     },
     {
@@ -325,9 +391,9 @@
       "date": "2017-04-24",
       "guest": null,
       "role": null,
-      "topic": "Just the two of us, on Terrence Malick’s The Tree of Life and what it says about existence.",
-      "youtube": "U3C9x1A3PMU",
-      "solo": true
+      "solo": true,
+      "topic": "Terrence Malick’s The Tree of Life, and what it says about existence.",
+      "youtube": "U3C9x1A3PMU"
     },
     {
       "number": 46,
@@ -368,7 +434,7 @@
       "date": "2017-05-08",
       "guest": "Matthew Alper",
       "role": "author",
-      "topic": "Religion as an evolved way of coping with existence, and an argument about nihilism.",
+      "topic": "Religion as an evolved way of coping with the pain of existence, and a contest over which of them is the bigger nihilist.",
       "youtube": "J3igKO7aWv0"
     },
     {
@@ -447,7 +513,7 @@
       "number": 60,
       "date": "2017-07-24",
       "guest": "Francis O’Gorman",
-      "role": "literary scholar",
+      "role": "academic and writer",
       "topic": "Worry, and his literary and cultural history of it.",
       "youtube": "NsXYTXZS484"
     },

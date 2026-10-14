@@ -72,8 +72,8 @@ HEAD = """<!doctype html>
         <p>
           In 2017 Matthew Smith and I, two psychologists and long-time friends, recorded more than sixty
           conversations about life, the universe and everything. Some were just the two of us. Most had a guest:
-          philosophers, psychologists, sceptics, writers and scientists, among them Susan Blackmore, Chris French
-          and Taner Edis. Sometimes funny, sometimes serious, sometimes profound even.
+          philosophers, psychologists, sceptics, writers and scientists, among them
+          <a href="#ep-34">Susan Blackmore</a>, <a href="#ep-32">Chris French</a> and <a href="#ep-20">Taner Edis</a>. Sometimes funny, sometimes serious, sometimes profound even.
         </p>
         <p>
           The book <a href="{book}"><em>The Existential Files</em></a> grew out of these conversations.
@@ -119,6 +119,8 @@ def episode_html(ep):
     meta = []
     if ep.get("part"):
         meta.append(esc(ep["part"]))
+    if ep.get("note"):
+        meta.append(esc(ep["note"]))
     if ep.get("date"):
         meta.append(f'<time datetime="{esc(ep["date"])}">{nice_date(ep["date"])}</time>')
     if ep.get("youtube"):
@@ -213,8 +215,8 @@ def main():
         DATA.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         print(f"Matched {matched} YouTube videos to episodes; saved {DATA.relative_to(ROOT)}")
 
-    # Newest first, as podcast listings usually are.
-    episodes = sorted(data["episodes"], key=lambda e: e["number"], reverse=True)
+    # Oldest first: the conversation runs in order, and later episodes refer back.
+    episodes = sorted(data["episodes"], key=lambda e: e["number"])
     channel = data["youtube_channel"]
 
     parts = [HEAD.replace("{book}", BOOK_PDF).replace("{channel}", esc(channel))]
